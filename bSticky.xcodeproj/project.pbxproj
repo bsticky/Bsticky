@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D03C1D625F35CA400266BC6 /* ManagedSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03C1D525F35CA400266BC6 /* ManagedSticky.swift */; };
+		3D0F37B925B9B0F800EA14DF /* CreateStickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F37B825B9B0F800EA14DF /* CreateStickyView.swift */; };
+		3D18180225CE962A00B4C3CB /* StickyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18180125CE962A00B4C3CB /* StickyCell.swift */; };
+		3D1B851725C57C54004D887D /* CreasteStickyViewDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B851625C57C54004D887D /* CreasteStickyViewDelegateTests.swift */; };
+		3D1B851B25C58E98004D887D /* ManageTagViewDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B851A25C58E98004D887D /* ManageTagViewDelegateTests.swift */; };
+		3D1C0EB426073DB9007A785E /* AppreanceSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C0EB326073DB9007A785E /* AppreanceSettingViewController.swift */; };
+		3D201358258C64980077AF47 /* BeeWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D201357258C64980077AF47 /* BeeWorkerTests.swift */; };
+		3D20135A258C66170077AF47 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D201359258C66170077AF47 /* Seeds.swift */; };
+		3D2A05DF25F9185900A79FFB /* BeeEditTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A05DE25F9185900A79FFB /* BeeEditTagView.swift */; };
+		3D2A05E325F918AF00A79FFB /* BeeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A05E225F918AF00A79FFB /* BeeTextView.swift */; };
+		3D2CF68525BC3C9800F7C2F4 /* BeeAudioRecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CF68425BC3C9800F7C2F4 /* BeeAudioRecordingController.swift */; };
+		3D353C0E25CBDCFC000FE582 /* BeeMediaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D353C0D25CBDCFC000FE582 /* BeeMediaHelper.swift */; };
+		3D38BA9E25B97B34004F3E6D /* HexagonTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38BA9D25B97B34004F3E6D /* HexagonTagView.swift */; };
+		3D3D766B25FFA1C5008F5AD9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D766A25FFA1C5008F5AD9 /* SettingsView.swift */; };
+		3D40FD2225A43E6100962DE0 /* ManageTagPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40FD2125A43E6100962DE0 /* ManageTagPresenter.swift */; };
+		3D4197962590D1CA00EB8253 /* CreateStickyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197952590D1CA00EB8253 /* CreateStickyRouter.swift */; };
+		3D4197A22590DC8C00EB8253 /* StartBeeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197A12590DC8C00EB8253 /* StartBeeModels.swift */; };
+		3D4197A42590DCD100EB8253 /* StartBeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197A32590DCD100EB8253 /* StartBeeViewController.swift */; };
+		3D4197A62590DD6200EB8253 /* StartBeeeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197A52590DD6200EB8253 /* StartBeeeInteractor.swift */; };
+		3D4197A82590DDA200EB8253 /* StartBeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197A72590DDA200EB8253 /* StartBeePresenter.swift */; };
+		3D4197AA2590DE2200EB8253 /* StartBeeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197A92590DE2200EB8253 /* StartBeeRouter.swift */; };
+		3D4CF64F25C0111B004D49DD /* BeePhotoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CF64E25C0111B004D49DD /* BeePhotoPreview.swift */; };
+		3D4E378625C18F76008DB749 /* BeeCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E378525C18F76008DB749 /* BeeCameraView.swift */; };
+		3D52D1CB25DFBB2800265A10 /* ManageStickyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52D1CA25DFBB2800265A10 /* ManageStickyPresenter.swift */; };
+		3D52D1CF25DFBBE900265A10 /* ManageStickyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52D1CE25DFBBE900265A10 /* ManageStickyRouter.swift */; };
+		3D52D1D425DFBD7600265A10 /* ManageStickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52D1D325DFBD7600265A10 /* ManageStickyView.swift */; };
+		3D52DF7D25A5609C0043A5F1 /* ManageTagViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52DF7C25A5609C0043A5F1 /* ManageTagViewControllerTests.swift */; };
+		3D52DF7F25A5670B0043A5F1 /* ManageTagInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52DF7E25A5670B0043A5F1 /* ManageTagInteractorTests.swift */; };
+		3D67AC6F25EB79E90065BB79 /* BeeAudioRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67AC6E25EB79E90065BB79 /* BeeAudioRecorderView.swift */; };
+		3D67AC7325EB9EA30065BB79 /* BeeAudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67AC7225EB9EA30065BB79 /* BeeAudioPlayerView.swift */; };
+		3D6B413225ECDCAE0093438F /* BeeAudioVisualizerComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B413125ECDCAE0093438F /* BeeAudioVisualizerComposition.swift */; };
+		3D6CA6C0259715AD00B49A6A /* StickySqliteHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CA6BF259715AD00B49A6A /* StickySqliteHelperTests.swift */; };
+		3D74FD4925DFB4FC00631163 /* ListStickiesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD4825DFB4FC00631163 /* ListStickiesViewControllerTests.swift */; };
+		3D74FD5025DFB56700631163 /* ManageStickyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD4F25DFB56700631163 /* ManageStickyViewController.swift */; };
+		3D74FD5625DFB5BD00631163 /* ManageStickyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD5525DFB5BD00631163 /* ManageStickyModels.swift */; };
+		3D74FD6025DFB97F00631163 /* ManageStickyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD5F25DFB97E00631163 /* ManageStickyInteractor.swift */; };
+		3D77DA4C258782DA00957A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA4B258782DA00957A0E /* AppDelegate.swift */; };
+		3D77DA4E258782DA00957A0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA4D258782DA00957A0E /* SceneDelegate.swift */; };
+		3D77DA52258782DC00957A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D77DA51258782DC00957A0E /* Assets.xcassets */; };
+		3D77DA55258782DC00957A0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D77DA54258782DC00957A0E /* Preview Assets.xcassets */; };
+		3D77DA63258782DC00957A0E /* bStickyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA62258782DC00957A0E /* bStickyTests.swift */; };
+		3D77DA6E2587831100957A0E /* ListStickiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA6D2587831100957A0E /* ListStickiesViewController.swift */; };
+		3D77DA722587852300957A0E /* CreateStickyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA712587852300957A0E /* CreateStickyModels.swift */; };
+		3D77DA762587856800957A0E /* Sticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA752587856800957A0E /* Sticky.swift */; };
+		3D77DA7825878FFD00957A0E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA7725878FFD00957A0E /* Tag.swift */; };
+		3D77DA7A25879C0B00957A0E /* CreateStickyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA7925879C0B00957A0E /* CreateStickyInteractor.swift */; };
+		3D77DA7C25879D9F00957A0E /* CreateStickyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA7B25879D9F00957A0E /* CreateStickyPresenter.swift */; };
+		3D77DA7F25879EB000957A0E /* BeeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D77DA7E25879EB000957A0E /* BeeWorker.swift */; };
+		3D78C4D62588D9D5006383FC /* BeeMemDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C4D52588D9D5006383FC /* BeeMemDB.swift */; };
+		3D78C4D82588DA02006383FC /* BeeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C4D72588DA02006383FC /* BeeDatabase.swift */; };
+		3D78C4E22588F211006383FC /* ListStickiesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C4E12588F211006383FC /* ListStickiesModels.swift */; };
+		3D7B79F225A055FF00626B69 /* ManageTagInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B79F125A055FF00626B69 /* ManageTagInteractor.swift */; };
+		3D7B79F425A0584400626B69 /* ManageTagRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B79F325A0584400626B69 /* ManageTagRouter.swift */; };
+		3D7C3882259B706600B3FA95 /* ManageTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C3881259B706600B3FA95 /* ManageTagViewController.swift */; };
+		3D84E43025B9331700B18D20 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84E42F25B9331700B18D20 /* TagView.swift */; };
+		3D84E43225B9391500B18D20 /* BeeColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84E43125B9391500B18D20 /* BeeColorPickerView.swift */; };
+		3D84E43525B93CFA00B18D20 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84E43425B93CFA00B18D20 /* UIHelper.swift */; };
+		3D84E43925B9568000B18D20 /* ChooseTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84E43825B9568000B18D20 /* ChooseTagView.swift */; };
+		3D85B44B25C945DA008E0FF9 /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85B44A25C945DA008E0FF9 /* AudioVisualizerView.swift */; };
+		3D8973582596391E0055831C /* BeeSqliteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8973572596391E0055831C /* BeeSqliteHelper.swift */; };
+		3D9BD0A1258AC006007F4E90 /* CreateStickyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BD0A0258AC006007F4E90 /* CreateStickyViewController.swift */; };
+		3DB9CDD025F2753E00085CF3 /* BeeZoomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9CDCF25F2753E00085CF3 /* BeeZoomImageView.swift */; };
+		3DBE5CC325D170420069FDBA /* ListStickiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE5CC225D170420069FDBA /* ListStickiesView.swift */; };
+		3DC913CB2591504A008C16F8 /* StartSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC913CA2591504A008C16F8 /* StartSceneViewControllerTests.swift */; };
+		3DC98E2426032513006DB06C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC98E2326032513006DB06C /* SettingsViewController.swift */; };
+		3DCE240F25A99C6600ECD395 /* ManageTagPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE240E25A99C6600ECD395 /* ManageTagPresenterTests.swift */; };
+		3DCE241125A9F5C900ECD395 /* ManageTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE241025A9F5C900ECD395 /* ManageTagView.swift */; };
+		3DD85D02258CB91000C15F37 /* CreateStickyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D01258CB91000C15F37 /* CreateStickyInteractorTests.swift */; };
+		3DD85D04258CDF9A00C15F37 /* CreateStickyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D03258CDF9A00C15F37 /* CreateStickyPresenterTests.swift */; };
+		3DD85D06258CE3F800C15F37 /* CreateStickyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D05258CE3F800C15F37 /* CreateStickyViewControllerTests.swift */; };
+		3DDAB0F5258F1638005FE193 /* StartSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAB0F4258F1638005FE193 /* StartSceneInteractorTests.swift */; };
+		3DDAB0F7258F1648005FE193 /* StartScenePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAB0F6258F1648005FE193 /* StartScenePresenterTests.swift */; };
+		3DDB487F2609CE2E00C95DB0 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB487E2609CE2E00C95DB0 /* Preferences.swift */; };
+		3DEB8E82259DA06200A87D9C /* ManageTagModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEB8E81259DA06200A87D9C /* ManageTagModels.swift */; };
+		3DF20CAE25BFA0CB00E35AC3 /* BeeCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF20CAD25BFA0CB00E35AC3 /* BeeCameraController.swift */; };
+		3DF2F93E25CD050700671E76 /* ListStickiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2F93D25CD050700671E76 /* ListStickiesInteractor.swift */; };
+		3DF2F94225CD05D500671E76 /* ListStickiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2F94125CD05D500671E76 /* ListStickiesPresenter.swift */; };
+		3DF2F94625CD067D00671E76 /* ListStickiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2F94525CD067D00671E76 /* ListStickiesRouter.swift */; };
+		3DFE12342607471F004C4060 /* AppreanceSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE12332607471F004C4060 /* AppreanceSettingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D77DA5F258782DC00957A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D77DA40258782DA00957A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D77DA47258782DA00957A0E;
+			remoteInfo = bSticky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D03C1D525F35CA400266BC6 /* ManagedSticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedSticky.swift; sourceTree = "<group>"; };
+		3D0F37B825B9B0F800EA14DF /* CreateStickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyView.swift; sourceTree = "<group>"; };
+		3D18180125CE962A00B4C3CB /* StickyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCell.swift; sourceTree = "<group>"; };
+		3D1B851625C57C54004D887D /* CreasteStickyViewDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreasteStickyViewDelegateTests.swift; sourceTree = "<group>"; };
+		3D1B851A25C58E98004D887D /* ManageTagViewDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagViewDelegateTests.swift; sourceTree = "<group>"; };
+		3D1C0EB326073DB9007A785E /* AppreanceSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreanceSettingViewController.swift; sourceTree = "<group>"; };
+		3D201357258C64980077AF47 /* BeeWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeWorkerTests.swift; sourceTree = "<group>"; };
+		3D201359258C66170077AF47 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
+		3D2A05DE25F9185900A79FFB /* BeeEditTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeEditTagView.swift; sourceTree = "<group>"; };
+		3D2A05E225F918AF00A79FFB /* BeeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTextView.swift; sourceTree = "<group>"; };
+		3D2CF68425BC3C9800F7C2F4 /* BeeAudioRecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioRecordingController.swift; sourceTree = "<group>"; };
+		3D353C0D25CBDCFC000FE582 /* BeeMediaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeMediaHelper.swift; sourceTree = "<group>"; };
+		3D38BA9D25B97B34004F3E6D /* HexagonTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonTagView.swift; sourceTree = "<group>"; };
+		3D3D766A25FFA1C5008F5AD9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3D40FD2125A43E6100962DE0 /* ManageTagPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagPresenter.swift; sourceTree = "<group>"; };
+		3D4197952590D1CA00EB8253 /* CreateStickyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyRouter.swift; sourceTree = "<group>"; };
+		3D4197A12590DC8C00EB8253 /* StartBeeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeModels.swift; sourceTree = "<group>"; };
+		3D4197A32590DCD100EB8253 /* StartBeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeViewController.swift; sourceTree = "<group>"; };
+		3D4197A52590DD6200EB8253 /* StartBeeeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeeInteractor.swift; sourceTree = "<group>"; };
+		3D4197A72590DDA200EB8253 /* StartBeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeePresenter.swift; sourceTree = "<group>"; };
+		3D4197A92590DE2200EB8253 /* StartBeeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeRouter.swift; sourceTree = "<group>"; };
+		3D4CF64E25C0111B004D49DD /* BeePhotoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeePhotoPreview.swift; sourceTree = "<group>"; };
+		3D4E378525C18F76008DB749 /* BeeCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeCameraView.swift; sourceTree = "<group>"; };
+		3D52D1CA25DFBB2800265A10 /* ManageStickyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyPresenter.swift; sourceTree = "<group>"; };
+		3D52D1CE25DFBBE900265A10 /* ManageStickyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyRouter.swift; sourceTree = "<group>"; };
+		3D52D1D325DFBD7600265A10 /* ManageStickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyView.swift; sourceTree = "<group>"; };
+		3D52DF7C25A5609C0043A5F1 /* ManageTagViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagViewControllerTests.swift; sourceTree = "<group>"; };
+		3D52DF7E25A5670B0043A5F1 /* ManageTagInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagInteractorTests.swift; sourceTree = "<group>"; };
+		3D67AC6E25EB79E90065BB79 /* BeeAudioRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioRecorderView.swift; sourceTree = "<group>"; };
+		3D67AC7225EB9EA30065BB79 /* BeeAudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioPlayerView.swift; sourceTree = "<group>"; };
+		3D6B413125ECDCAE0093438F /* BeeAudioVisualizerComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioVisualizerComposition.swift; sourceTree = "<group>"; };
+		3D6CA6BF259715AD00B49A6A /* StickySqliteHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickySqliteHelperTests.swift; sourceTree = "<group>"; };
+		3D74FD4825DFB4FC00631163 /* ListStickiesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesViewControllerTests.swift; sourceTree = "<group>"; };
+		3D74FD4F25DFB56700631163 /* ManageStickyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyViewController.swift; sourceTree = "<group>"; };
+		3D74FD5525DFB5BD00631163 /* ManageStickyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyModels.swift; sourceTree = "<group>"; };
+		3D74FD5F25DFB97E00631163 /* ManageStickyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyInteractor.swift; sourceTree = "<group>"; };
+		3D77DA48258782DA00957A0E /* bSticky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bSticky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D77DA4B258782DA00957A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D77DA4D258782DA00957A0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D77DA51258782DC00957A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D77DA54258782DC00957A0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D77DA59258782DC00957A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D77DA5E258782DC00957A0E /* bStickyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bStickyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D77DA62258782DC00957A0E /* bStickyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bStickyTests.swift; sourceTree = "<group>"; };
+		3D77DA64258782DC00957A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D77DA6D2587831100957A0E /* ListStickiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesViewController.swift; sourceTree = "<group>"; };
+		3D77DA712587852300957A0E /* CreateStickyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyModels.swift; sourceTree = "<group>"; };
+		3D77DA752587856800957A0E /* Sticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticky.swift; sourceTree = "<group>"; };
+		3D77DA7725878FFD00957A0E /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		3D77DA7925879C0B00957A0E /* CreateStickyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyInteractor.swift; sourceTree = "<group>"; };
+		3D77DA7B25879D9F00957A0E /* CreateStickyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyPresenter.swift; sourceTree = "<group>"; };
+		3D77DA7E25879EB000957A0E /* BeeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeWorker.swift; sourceTree = "<group>"; };
+		3D78C4D52588D9D5006383FC /* BeeMemDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeMemDB.swift; sourceTree = "<group>"; };
+		3D78C4D72588DA02006383FC /* BeeDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeDatabase.swift; sourceTree = "<group>"; };
+		3D78C4E12588F211006383FC /* ListStickiesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesModels.swift; sourceTree = "<group>"; };
+		3D7B79F125A055FF00626B69 /* ManageTagInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagInteractor.swift; sourceTree = "<group>"; };
+		3D7B79F325A0584400626B69 /* ManageTagRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagRouter.swift; sourceTree = "<group>"; };
+		3D7C3881259B706600B3FA95 /* ManageTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagViewController.swift; sourceTree = "<group>"; };
+		3D84E42F25B9331700B18D20 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		3D84E43125B9391500B18D20 /* BeeColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeColorPickerView.swift; sourceTree = "<group>"; };
+		3D84E43425B93CFA00B18D20 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		3D84E43825B9568000B18D20 /* ChooseTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTagView.swift; sourceTree = "<group>"; };
+		3D85B44A25C945DA008E0FF9 /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
+		3D8973572596391E0055831C /* BeeSqliteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeSqliteHelper.swift; sourceTree = "<group>"; };
+		3D9BD0A0258AC006007F4E90 /* CreateStickyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyViewController.swift; sourceTree = "<group>"; };
+		3DB9CDCF25F2753E00085CF3 /* BeeZoomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeZoomImageView.swift; sourceTree = "<group>"; };
+		3DBE5CC225D170420069FDBA /* ListStickiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesView.swift; sourceTree = "<group>"; };
+		3DC913CA2591504A008C16F8 /* StartSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneViewControllerTests.swift; sourceTree = "<group>"; };
+		3DC98E2326032513006DB06C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3DCE240E25A99C6600ECD395 /* ManageTagPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagPresenterTests.swift; sourceTree = "<group>"; };
+		3DCE241025A9F5C900ECD395 /* ManageTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagView.swift; sourceTree = "<group>"; };
+		3DD85D01258CB91000C15F37 /* CreateStickyInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyInteractorTests.swift; sourceTree = "<group>"; };
+		3DD85D03258CDF9A00C15F37 /* CreateStickyPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyPresenterTests.swift; sourceTree = "<group>"; };
+		3DD85D05258CE3F800C15F37 /* CreateStickyViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyViewControllerTests.swift; sourceTree = "<group>"; };
+		3DDAB0F4258F1638005FE193 /* StartSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneInteractorTests.swift; sourceTree = "<group>"; };
+		3DDAB0F6258F1648005FE193 /* StartScenePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScenePresenterTests.swift; sourceTree = "<group>"; };
+		3DDB487E2609CE2E00C95DB0 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		3DEB8E81259DA06200A87D9C /* ManageTagModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagModels.swift; sourceTree = "<group>"; };
+		3DF20CAD25BFA0CB00E35AC3 /* BeeCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeCameraController.swift; sourceTree = "<group>"; };
+		3DF2F93D25CD050700671E76 /* ListStickiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesInteractor.swift; sourceTree = "<group>"; };
+		3DF2F94125CD05D500671E76 /* ListStickiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesPresenter.swift; sourceTree = "<group>"; };
+		3DF2F94525CD067D00671E76 /* ListStickiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesRouter.swift; sourceTree = "<group>"; };
+		3DFE12332607471F004C4060 /* AppreanceSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreanceSettingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D77DA45258782DA00957A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D77DA5B258782DC00957A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D0F37B725B9B0D000EA14DF /* CreateStickySceneUI */ = {
+			isa = PBXGroup;
+			children = (
+				3D0F37B825B9B0F800EA14DF /* CreateStickyView.swift */,
+			);
+			path = CreateStickySceneUI;
+			sourceTree = "<group>";
+		};
+		3D1AB85A25962F9800BF93B1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3D6CA6BF259715AD00B49A6A /* StickySqliteHelperTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3D201356258C647D0077AF47 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				3D201357258C64980077AF47 /* BeeWorkerTests.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		3D2E49D625CBC3710040A87D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3D84E43425B93CFA00B18D20 /* UIHelper.swift */,
+				3D8973572596391E0055831C /* BeeSqliteHelper.swift */,
+				3D353C0D25CBDCFC000FE582 /* BeeMediaHelper.swift */,
+				3DF20CAD25BFA0CB00E35AC3 /* BeeCameraController.swift */,
+				3D2CF68425BC3C9800F7C2F4 /* BeeAudioRecordingController.swift */,
+				3D6B413125ECDCAE0093438F /* BeeAudioVisualizerComposition.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3D38BA9C25B97B03004F3E6D /* StartBeeSceneUI */ = {
+			isa = PBXGroup;
+			children = (
+				3D38BA9D25B97B34004F3E6D /* HexagonTagView.swift */,
+			);
+			path = StartBeeSceneUI;
+			sourceTree = "<group>";
+		};
+		3D3D766825FFA193008F5AD9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3DC98E2326032513006DB06C /* SettingsViewController.swift */,
+				3D1C0EB326073DB9007A785E /* AppreanceSettingViewController.swift */,
+				3DDB487E2609CE2E00C95DB0 /* Preferences.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3D3D766925FFA1B0008F5AD9 /* SettingsSceneUI */ = {
+			isa = PBXGroup;
+			children = (
+				3D3D766A25FFA1C5008F5AD9 /* SettingsView.swift */,
+				3DFE12332607471F004C4060 /* AppreanceSettingView.swift */,
+			);
+			path = SettingsSceneUI;
+			sourceTree = "<group>";
+		};
+		3D4197A02590DC7300EB8253 /* StartBee */ = {
+			isa = PBXGroup;
+			children = (
+				3D4197A12590DC8C00EB8253 /* StartBeeModels.swift */,
+				3D4197A32590DCD100EB8253 /* StartBeeViewController.swift */,
+				3D4197A52590DD6200EB8253 /* StartBeeeInteractor.swift */,
+				3D4197A72590DDA200EB8253 /* StartBeePresenter.swift */,
+				3D4197A92590DE2200EB8253 /* StartBeeRouter.swift */,
+			);
+			path = StartBee;
+			sourceTree = "<group>";
+		};
+		3D450CFF25CA9A7E00176AA3 /* ListStickiesSceneUI */ = {
+			isa = PBXGroup;
+			children = (
+				3D18180125CE962A00B4C3CB /* StickyCell.swift */,
+				3DBE5CC225D170420069FDBA /* ListStickiesView.swift */,
+			);
+			path = ListStickiesSceneUI;
+			sourceTree = "<group>";
+		};
+		3D52D1D225DFBD5500265A10 /* ManageStickySceneUI */ = {
+			isa = PBXGroup;
+			children = (
+				3D52D1D325DFBD7600265A10 /* ManageStickyView.swift */,
+				3DB9CDCF25F2753E00085CF3 /* BeeZoomImageView.swift */,
+			);
+			path = ManageStickySceneUI;
+			sourceTree = "<group>";
+		};
+		3D67AC6D25EB79C70065BB79 /* BeeMediaView */ = {
+			isa = PBXGroup;
+			children = (
+				3D4E378525C18F76008DB749 /* BeeCameraView.swift */,
+				3D4CF64E25C0111B004D49DD /* BeePhotoPreview.swift */,
+				3D85B44A25C945DA008E0FF9 /* AudioVisualizerView.swift */,
+				3D67AC6E25EB79E90065BB79 /* BeeAudioRecorderView.swift */,
+				3D67AC7225EB9EA30065BB79 /* BeeAudioPlayerView.swift */,
+			);
+			path = BeeMediaView;
+			sourceTree = "<group>";
+		};
+		3D74FD4725DFB48200631163 /* ListStickiesTest */ = {
+			isa = PBXGroup;
+			children = (
+				3D74FD4825DFB4FC00631163 /* ListStickiesViewControllerTests.swift */,
+			);
+			path = ListStickiesTest;
+			sourceTree = "<group>";
+		};
+		3D74FD4E25DFB51E00631163 /* ManageSticky */ = {
+			isa = PBXGroup;
+			children = (
+				3D74FD5525DFB5BD00631163 /* ManageStickyModels.swift */,
+				3D74FD4F25DFB56700631163 /* ManageStickyViewController.swift */,
+				3D74FD5F25DFB97E00631163 /* ManageStickyInteractor.swift */,
+				3D52D1CA25DFBB2800265A10 /* ManageStickyPresenter.swift */,
+				3D52D1CE25DFBBE900265A10 /* ManageStickyRouter.swift */,
+			);
+			path = ManageSticky;
+			sourceTree = "<group>";
+		};
+		3D77DA3F258782DA00957A0E = {
+			isa = PBXGroup;
+			children = (
+				3D77DA4A258782DA00957A0E /* bSticky */,
+				3D77DA61258782DC00957A0E /* bStickyTests */,
+				3D77DA49258782DA00957A0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D77DA49258782DA00957A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D77DA48258782DA00957A0E /* bSticky.app */,
+				3D77DA5E258782DC00957A0E /* bStickyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D77DA4A258782DA00957A0E /* bSticky */ = {
+			isa = PBXGroup;
+			children = (
+				3D77DA4B258782DA00957A0E /* AppDelegate.swift */,
+				3D77DA4D258782DA00957A0E /* SceneDelegate.swift */,
+				3D77DA51258782DC00957A0E /* Assets.xcassets */,
+				3D77DA59258782DC00957A0E /* Info.plist */,
+				3D77DA6F258784F500957A0E /* Model */,
+				3D77DA70258784FE00957A0E /* Scene */,
+				3D78C4D42588D9B5006383FC /* Service */,
+				3D77DA7D25879E9F00957A0E /* Worker */,
+				3D2E49D625CBC3710040A87D /* Utility */,
+				3DA0F86E2594978500D713D9 /* UI */,
+				3D77DA53258782DC00957A0E /* Preview Content */,
+			);
+			path = bSticky;
+			sourceTree = "<group>";
+		};
+		3D77DA53258782DC00957A0E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D77DA54258782DC00957A0E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D77DA61258782DC00957A0E /* bStickyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C4DD2588EF02006383FC /* Scenes */,
+				3D1AB85A25962F9800BF93B1 /* Service */,
+				3D201356258C647D0077AF47 /* Workers */,
+				3D77DA62258782DC00957A0E /* bStickyTests.swift */,
+				3D201359258C66170077AF47 /* Seeds.swift */,
+				3D77DA64258782DC00957A0E /* Info.plist */,
+			);
+			path = bStickyTests;
+			sourceTree = "<group>";
+		};
+		3D77DA6F258784F500957A0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D77DA7725878FFD00957A0E /* Tag.swift */,
+				3D77DA752587856800957A0E /* Sticky.swift */,
+				3D03C1D525F35CA400266BC6 /* ManagedSticky.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D77DA70258784FE00957A0E /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3D4197A02590DC7300EB8253 /* StartBee */,
+				3D7C3880259B677C00B3FA95 /* ManageTag */,
+				3D78C4DB2588EA16006383FC /* CreateSticky */,
+				3D78C4DC2588EA25006383FC /* ListStickies */,
+				3D74FD4E25DFB51E00631163 /* ManageSticky */,
+				3D3D766825FFA193008F5AD9 /* Settings */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3D77DA7D25879E9F00957A0E /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				3D77DA7E25879EB000957A0E /* BeeWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		3D78C4D42588D9B5006383FC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C4D52588D9D5006383FC /* BeeMemDB.swift */,
+				3D78C4D72588DA02006383FC /* BeeDatabase.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3D78C4DB2588EA16006383FC /* CreateSticky */ = {
+			isa = PBXGroup;
+			children = (
+				3D77DA712587852300957A0E /* CreateStickyModels.swift */,
+				3D9BD0A0258AC006007F4E90 /* CreateStickyViewController.swift */,
+				3D77DA7925879C0B00957A0E /* CreateStickyInteractor.swift */,
+				3D77DA7B25879D9F00957A0E /* CreateStickyPresenter.swift */,
+				3D4197952590D1CA00EB8253 /* CreateStickyRouter.swift */,
+			);
+			path = CreateSticky;
+			sourceTree = "<group>";
+		};
+		3D78C4DC2588EA25006383FC /* ListStickies */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C4E12588F211006383FC /* ListStickiesModels.swift */,
+				3D77DA6D2587831100957A0E /* ListStickiesViewController.swift */,
+				3DF2F93D25CD050700671E76 /* ListStickiesInteractor.swift */,
+				3DF2F94125CD05D500671E76 /* ListStickiesPresenter.swift */,
+				3DF2F94525CD067D00671E76 /* ListStickiesRouter.swift */,
+			);
+			path = ListStickies;
+			sourceTree = "<group>";
+		};
+		3D78C4DD2588EF02006383FC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3DDAB0F3258F15E1005FE193 /* StartSceneTest */,
+				3DD85D00258CB8D100C15F37 /* CreateStickyTest */,
+				3DCF7293259C900000DD592A /* ManageTagTest */,
+				3D74FD4725DFB48200631163 /* ListStickiesTest */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3D7C3880259B677C00B3FA95 /* ManageTag */ = {
+			isa = PBXGroup;
+			children = (
+				3DEB8E81259DA06200A87D9C /* ManageTagModels.swift */,
+				3D7C3881259B706600B3FA95 /* ManageTagViewController.swift */,
+				3D7B79F125A055FF00626B69 /* ManageTagInteractor.swift */,
+				3D40FD2125A43E6100962DE0 /* ManageTagPresenter.swift */,
+				3D7B79F325A0584400626B69 /* ManageTagRouter.swift */,
+			);
+			path = ManageTag;
+			sourceTree = "<group>";
+		};
+		3D84E42E25B932EB00B18D20 /* ManageTagSceneUI */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE241025A9F5C900ECD395 /* ManageTagView.swift */,
+				3D84E42F25B9331700B18D20 /* TagView.swift */,
+				3D2A05DE25F9185900A79FFB /* BeeEditTagView.swift */,
+				3D2A05E225F918AF00A79FFB /* BeeTextView.swift */,
+				3D84E43825B9568000B18D20 /* ChooseTagView.swift */,
+				3D84E43125B9391500B18D20 /* BeeColorPickerView.swift */,
+			);
+			path = ManageTagSceneUI;
+			sourceTree = "<group>";
+		};
+		3DA0F86E2594978500D713D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3D38BA9C25B97B03004F3E6D /* StartBeeSceneUI */,
+				3D84E42E25B932EB00B18D20 /* ManageTagSceneUI */,
+				3D0F37B725B9B0D000EA14DF /* CreateStickySceneUI */,
+				3D450CFF25CA9A7E00176AA3 /* ListStickiesSceneUI */,
+				3D52D1D225DFBD5500265A10 /* ManageStickySceneUI */,
+				3D3D766925FFA1B0008F5AD9 /* SettingsSceneUI */,
+				3D67AC6D25EB79C70065BB79 /* BeeMediaView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3DCF7293259C900000DD592A /* ManageTagTest */ = {
+			isa = PBXGroup;
+			children = (
+				3D52DF7C25A5609C0043A5F1 /* ManageTagViewControllerTests.swift */,
+				3D52DF7E25A5670B0043A5F1 /* ManageTagInteractorTests.swift */,
+				3DCE240E25A99C6600ECD395 /* ManageTagPresenterTests.swift */,
+				3D1B851A25C58E98004D887D /* ManageTagViewDelegateTests.swift */,
+			);
+			path = ManageTagTest;
+			sourceTree = "<group>";
+		};
+		3DD85D00258CB8D100C15F37 /* CreateStickyTest */ = {
+			isa = PBXGroup;
+			children = (
+				3DD85D05258CE3F800C15F37 /* CreateStickyViewControllerTests.swift */,
+				3DD85D01258CB91000C15F37 /* CreateStickyInteractorTests.swift */,
+				3DD85D03258CDF9A00C15F37 /* CreateStickyPresenterTests.swift */,
+				3D1B851625C57C54004D887D /* CreasteStickyViewDelegateTests.swift */,
+			);
+			path = CreateStickyTest;
+			sourceTree = "<group>";
+		};
+		3DDAB0F3258F15E1005FE193 /* StartSceneTest */ = {
+			isa = PBXGroup;
+			children = (
+				3DDAB0F4258F1638005FE193 /* StartSceneInteractorTests.swift */,
+				3DDAB0F6258F1648005FE193 /* StartScenePresenterTests.swift */,
+				3DC913CA2591504A008C16F8 /* StartSceneViewControllerTests.swift */,
+			);
+			path = StartSceneTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D77DA47258782DA00957A0E /* bSticky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D77DA67258782DC00957A0E /* Build configuration list for PBXNativeTarget "bSticky" */;
+			buildPhases = (
+				3D77DA44258782DA00957A0E /* Sources */,
+				3D77DA45258782DA00957A0E /* Frameworks */,
+				3D77DA46258782DA00957A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bSticky;
+			productName = bSticky;
+			productReference = 3D77DA48258782DA00957A0E /* bSticky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D77DA5D258782DC00957A0E /* bStickyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D77DA6A258782DC00957A0E /* Build configuration list for PBXNativeTarget "bStickyTests" */;
+			buildPhases = (
+				3D77DA5A258782DC00957A0E /* Sources */,
+				3D77DA5B258782DC00957A0E /* Frameworks */,
+				3D77DA5C258782DC00957A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D77DA60258782DC00957A0E /* PBXTargetDependency */,
+			);
+			name = bStickyTests;
+			productName = bStickyTests;
+			productReference = 3D77DA5E258782DC00957A0E /* bStickyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D77DA40258782DA00957A0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = FiftyPercent;
+				TargetAttributes = {
+					3D77DA47258782DA00957A0E = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					3D77DA5D258782DC00957A0E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 3D77DA47258782DA00957A0E;
+					};
+				};
+			};
+			buildConfigurationList = 3D77DA43258782DA00957A0E /* Build configuration list for PBXProject "bSticky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D77DA3F258782DA00957A0E;
+			productRefGroup = 3D77DA49258782DA00957A0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D77DA47258782DA00957A0E /* bSticky */,
+				3D77DA5D258782DC00957A0E /* bStickyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D77DA46258782DA00957A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D77DA55258782DC00957A0E /* Preview Assets.xcassets in Resources */,
+				3D77DA52258782DC00957A0E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D77DA5C258782DC00957A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D77DA44258782DA00957A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9CDD025F2753E00085CF3 /* BeeZoomImageView.swift in Sources */,
+				3D2A05E325F918AF00A79FFB /* BeeTextView.swift in Sources */,
+				3DFE12342607471F004C4060 /* AppreanceSettingView.swift in Sources */,
+				3D67AC6F25EB79E90065BB79 /* BeeAudioRecorderView.swift in Sources */,
+				3D85B44B25C945DA008E0FF9 /* AudioVisualizerView.swift in Sources */,
+				3D40FD2225A43E6100962DE0 /* ManageTagPresenter.swift in Sources */,
+				3D84E43525B93CFA00B18D20 /* UIHelper.swift in Sources */,
+				3D67AC7325EB9EA30065BB79 /* BeeAudioPlayerView.swift in Sources */,
+				3D77DA722587852300957A0E /* CreateStickyModels.swift in Sources */,
+				3D4197A42590DCD100EB8253 /* StartBeeViewController.swift in Sources */,
+				3D2A05DF25F9185900A79FFB /* BeeEditTagView.swift in Sources */,
+				3D84E43025B9331700B18D20 /* TagView.swift in Sources */,
+				3D4197AA2590DE2200EB8253 /* StartBeeRouter.swift in Sources */,
+				3DC98E2426032513006DB06C /* SettingsViewController.swift in Sources */,
+				3D84E43925B9568000B18D20 /* ChooseTagView.swift in Sources */,
+				3D4197A22590DC8C00EB8253 /* StartBeeModels.swift in Sources */,
+				3D77DA7C25879D9F00957A0E /* CreateStickyPresenter.swift in Sources */,
+				3D4197A62590DD6200EB8253 /* StartBeeeInteractor.swift in Sources */,
+				3D77DA7F25879EB000957A0E /* BeeWorker.swift in Sources */,
+				3D2CF68525BC3C9800F7C2F4 /* BeeAudioRecordingController.swift in Sources */,
+				3DEB8E82259DA06200A87D9C /* ManageTagModels.swift in Sources */,
+				3D7B79F425A0584400626B69 /* ManageTagRouter.swift in Sources */,
+				3D4197962590D1CA00EB8253 /* CreateStickyRouter.swift in Sources */,
+				3D18180225CE962A00B4C3CB /* StickyCell.swift in Sources */,
+				3D77DA762587856800957A0E /* Sticky.swift in Sources */,
+				3D4197A82590DDA200EB8253 /* StartBeePresenter.swift in Sources */,
+				3D78C4D62588D9D5006383FC /* BeeMemDB.swift in Sources */,
+				3D74FD5625DFB5BD00631163 /* ManageStickyModels.swift in Sources */,
+				3D7C3882259B706600B3FA95 /* ManageTagViewController.swift in Sources */,
+				3D4CF64F25C0111B004D49DD /* BeePhotoPreview.swift in Sources */,
+				3DF2F94225CD05D500671E76 /* ListStickiesPresenter.swift in Sources */,
+				3D52D1D425DFBD7600265A10 /* ManageStickyView.swift in Sources */,
+				3D74FD5025DFB56700631163 /* ManageStickyViewController.swift in Sources */,
+				3DDB487F2609CE2E00C95DB0 /* Preferences.swift in Sources */,
+				3DF2F94625CD067D00671E76 /* ListStickiesRouter.swift in Sources */,
+				3D74FD6025DFB97F00631163 /* ManageStickyInteractor.swift in Sources */,
+				3D8973582596391E0055831C /* BeeSqliteHelper.swift in Sources */,
+				3D77DA6E2587831100957A0E /* ListStickiesViewController.swift in Sources */,
+				3D52D1CB25DFBB2800265A10 /* ManageStickyPresenter.swift in Sources */,
+				3D78C4D82588DA02006383FC /* BeeDatabase.swift in Sources */,
+				3D77DA4C258782DA00957A0E /* AppDelegate.swift in Sources */,
+				3D4E378625C18F76008DB749 /* BeeCameraView.swift in Sources */,
+				3D77DA4E258782DA00957A0E /* SceneDelegate.swift in Sources */,
+				3D77DA7825878FFD00957A0E /* Tag.swift in Sources */,
+				3DF20CAE25BFA0CB00E35AC3 /* BeeCameraController.swift in Sources */,
+				3D1C0EB426073DB9007A785E /* AppreanceSettingViewController.swift in Sources */,
+				3D38BA9E25B97B34004F3E6D /* HexagonTagView.swift in Sources */,
+				3D6B413225ECDCAE0093438F /* BeeAudioVisualizerComposition.swift in Sources */,
+				3D03C1D625F35CA400266BC6 /* ManagedSticky.swift in Sources */,
+				3D84E43225B9391500B18D20 /* BeeColorPickerView.swift in Sources */,
+				3D3D766B25FFA1C5008F5AD9 /* SettingsView.swift in Sources */,
+				3D78C4E22588F211006383FC /* ListStickiesModels.swift in Sources */,
+				3D353C0E25CBDCFC000FE582 /* BeeMediaHelper.swift in Sources */,
+				3D9BD0A1258AC006007F4E90 /* CreateStickyViewController.swift in Sources */,
+				3D77DA7A25879C0B00957A0E /* CreateStickyInteractor.swift in Sources */,
+				3D7B79F225A055FF00626B69 /* ManageTagInteractor.swift in Sources */,
+				3DF2F93E25CD050700671E76 /* ListStickiesInteractor.swift in Sources */,
+				3D0F37B925B9B0F800EA14DF /* CreateStickyView.swift in Sources */,
+				3DCE241125A9F5C900ECD395 /* ManageTagView.swift in Sources */,
+				3D52D1CF25DFBBE900265A10 /* ManageStickyRouter.swift in Sources */,
+				3DBE5CC325D170420069FDBA /* ListStickiesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D77DA5A258782DC00957A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDAB0F7258F1648005FE193 /* StartScenePresenterTests.swift in Sources */,
+				3D52DF7D25A5609C0043A5F1 /* ManageTagViewControllerTests.swift in Sources */,
+				3D1B851B25C58E98004D887D /* ManageTagViewDelegateTests.swift in Sources */,
+				3D77DA63258782DC00957A0E /* bStickyTests.swift in Sources */,
+				3D6CA6C0259715AD00B49A6A /* StickySqliteHelperTests.swift in Sources */,
+				3DCE240F25A99C6600ECD395 /* ManageTagPresenterTests.swift in Sources */,
+				3D52DF7F25A5670B0043A5F1 /* ManageTagInteractorTests.swift in Sources */,
+				3DD85D06258CE3F800C15F37 /* CreateStickyViewControllerTests.swift in Sources */,
+				3D201358258C64980077AF47 /* BeeWorkerTests.swift in Sources */,
+				3D20135A258C66170077AF47 /* Seeds.swift in Sources */,
+				3DC913CB2591504A008C16F8 /* StartSceneViewControllerTests.swift in Sources */,
+				3D1B851725C57C54004D887D /* CreasteStickyViewDelegateTests.swift in Sources */,
+				3DD85D02258CB91000C15F37 /* CreateStickyInteractorTests.swift in Sources */,
+				3D74FD4925DFB4FC00631163 /* ListStickiesViewControllerTests.swift in Sources */,
+				3DDAB0F5258F1638005FE193 /* StartSceneInteractorTests.swift in Sources */,
+				3DD85D04258CDF9A00C15F37 /* CreateStickyPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D77DA60258782DC00957A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D77DA47258782DA00957A0E /* bSticky */;
+			targetProxy = 3D77DA5F258782DC00957A0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D77DA65258782DC00957A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
+			};
+			name = Debug;
+		};
+		3D77DA66258782DC00957A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D77DA68258782DC00957A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.1;
+				DEVELOPMENT_ASSET_PATHS = "\"bSticky/Preview Content\"";
+				DEVELOPMENT_TEAM = 2L2Y7Z95X6;
+				"DEVELOPMENT_TEAM[sdk=*]" = 2L2Y7Z95X6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = bSticky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.fiftypercent.bsticky-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3D77DA69258782DC00957A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.1;
+				DEVELOPMENT_ASSET_PATHS = "\"bSticky/Preview Content\"";
+				DEVELOPMENT_TEAM = 2L2Y7Z95X6;
+				"DEVELOPMENT_TEAM[sdk=*]" = 2L2Y7Z95X6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = bSticky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.fiftypercent.bsticky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3D77DA6B258782DC00957A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = bStickyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bBook.bStickyTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bSticky.app/bSticky";
+			};
+			name = Debug;
+		};
+		3D77DA6C258782DC00957A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = bStickyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.bBook.bStickyTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bSticky.app/bSticky";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D77DA43258782DA00957A0E /* Build configuration list for PBXProject "bSticky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D77DA65258782DC00957A0E /* Debug */,
+				3D77DA66258782DC00957A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D77DA67258782DC00957A0E /* Build configuration list for PBXNativeTarget "bSticky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D77DA68258782DC00957A0E /* Debug */,
+				3D77DA69258782DC00957A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D77DA6A258782DC00957A0E /* Build configuration list for PBXNativeTarget "bStickyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D77DA6B258782DC00957A0E /* Debug */,
+				3D77DA6C258782DC00957A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D77DA40258782DA00957A0E /* Project object */;
+}
