@@ -6,6 +6,8 @@
 ## Contributing to Bsticky
 Bsticky welcome any contributions that improve the quality of bsticky project.
 
+Bsticky use [Clean Swift iOS Architecture][CleanArchitecture] Architecture.
+
 #### Writinc code
 Fix a bug, or add a new feature and make a pull request(current_dev branch: v1.x).
 
@@ -17,11 +19,11 @@ Bsticky always looking forward translators to increase language reach.
 git clone git@github.com:bsticky/Bsticky.git
 cd Bsticky 
 git checkout 1.x
-open Bsticky.xcworkspace
+open bSticky.xcodeproj
 ```
 ## License
 MIT
 
 [official]: https://bsticky.fiftypercent.tech/
 [Download]: https://apps.apple.com/us/app/bsticky/id1561592563
-
+[CleanArchitecture]: https://clean-swift.com/clean-swift-ios-architecture/
