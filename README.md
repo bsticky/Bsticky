@@ -6,13 +6,8 @@
 ## Contributing to Bsticky
 Bsticky welcome any contributions that improve the quality of bsticky project.
 
-Bsticky use [Clean Swift iOS Architecture][CleanArchitecture] Architecture.
+Bsticky use [Clean Swift iOS Architecture][CleanArchitecture].
 
-#### Writinc code
-Fix a bug, or add a new feature and make a pull request(current_dev branch: v1.x).
-
-#### Localizing Bsticky
-Bsticky always looking forward translators to increase language reach.
 
 ## Build
 ```bash
