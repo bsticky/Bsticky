@@ -11,12 +11,12 @@ import Foundation
 class BeeMemDB: StickyDBProtocol{
     
     static var tags = [
-        Tag(id: 0, name: "One", color: "#FF1D00", position: 0, activated: true, createdDate: 20201222, description: "description of tag one"),
-        Tag(id: 1, name: "Two", color: "#43FF5D", position: 1, activated: true, createdDate: 20201222, description: "--"),
-        Tag(id: 2, name: "Three", color: "#FF7016", position: 2, activated: true,createdDate: 20201222, description: "---"),
-        Tag(id: 3, name: "Four", color: "#FFEE34", position: 3, activated: true,createdDate: 20201212, description: "----"),
-        Tag(id: 4, name: "Five", color: "#0823FF", position: 4, activated: true ,createdDate: 20201212, description: "-----"),
-        Tag(id: 5, name: "Six", color: "#B72AFF", position: 5, activated: true,createdDate: 20201212, description: "------")
+        Tag(id: 1, name: "tagOne", color: "#FF1D00", position: 1, activated: true, createdDate: 1627512654, description: "tagOne|id: 1|position: 1"),
+        Tag(id: 2, name: "tagTwo", color: "#43FF5D", position: 2, activated: true, createdDate: 1627512654, description: "tagTwo|id: 2|position: 2"),
+        Tag(id: 3, name: "tagThree", color: "#FF7016", position: 3, activated: true,createdDate: 1627512654, description: "tagThree|id: 3|position: 3"),
+        Tag(id: 4, name: "tagFour", color: "#FFEE34", position: 4, activated: true,createdDate: 20201212, description: "tagFour|id: 4|position: 4"),
+        Tag(id: 5, name: "tagFive", color: "#0823FF", position: 5, activated: true ,createdDate: 20201212, description: "tagFive|id: 5|position: 5"),
+        Tag(id: 6, name: "tagSix", color: "#B72AFF", position: 6, activated: true,createdDate: 20201212, description: "tagSix|id: 6|position: 6")
     ]
     
     static var stickies = [

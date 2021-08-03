@@ -64,7 +64,7 @@ class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTag
     
     private func setup() {
         let viewController = self
-        let interactor = StartSceneInteractor()
+        let interactor = StartBeeInteractor()
         let presenter = StartBeePresenter()
         let router = StartBeeRouter()
         router.dataStore = interactor
@@ -121,7 +121,6 @@ class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTag
     // MARK: - StartCreatSticky scene
 
     func tagButtonTapped(tagId: Int, tagColor: UIColor) {
-        // if tagId == 0 { return }
         if tagId == 0 {
             displayAlert(title: "First Set tag", message: "Please, long press this button to set the tag for this button.")
         } else {

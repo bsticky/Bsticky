@@ -10,17 +10,14 @@
 		3D03C1D625F35CA400266BC6 /* ManagedSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03C1D525F35CA400266BC6 /* ManagedSticky.swift */; };
 		3D0F37B925B9B0F800EA14DF /* CreateStickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F37B825B9B0F800EA14DF /* CreateStickyView.swift */; };
 		3D18180225CE962A00B4C3CB /* StickyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18180125CE962A00B4C3CB /* StickyCell.swift */; };
-		3D1B851725C57C54004D887D /* CreasteStickyViewDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B851625C57C54004D887D /* CreasteStickyViewDelegateTests.swift */; };
-		3D1B851B25C58E98004D887D /* ManageTagViewDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B851A25C58E98004D887D /* ManageTagViewDelegateTests.swift */; };
 		3D1C0EB426073DB9007A785E /* AppreanceSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C0EB326073DB9007A785E /* AppreanceSettingViewController.swift */; };
-		3D201358258C64980077AF47 /* BeeWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D201357258C64980077AF47 /* BeeWorkerTests.swift */; };
-		3D20135A258C66170077AF47 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D201359258C66170077AF47 /* Seeds.swift */; };
 		3D2A05DF25F9185900A79FFB /* BeeEditTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A05DE25F9185900A79FFB /* BeeEditTagView.swift */; };
 		3D2A05E325F918AF00A79FFB /* BeeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A05E225F918AF00A79FFB /* BeeTextView.swift */; };
 		3D2CF68525BC3C9800F7C2F4 /* BeeAudioRecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CF68425BC3C9800F7C2F4 /* BeeAudioRecordingController.swift */; };
 		3D353C0E25CBDCFC000FE582 /* BeeMediaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D353C0D25CBDCFC000FE582 /* BeeMediaHelper.swift */; };
 		3D38BA9E25B97B34004F3E6D /* HexagonTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38BA9D25B97B34004F3E6D /* HexagonTagView.swift */; };
 		3D3D766B25FFA1C5008F5AD9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D766A25FFA1C5008F5AD9 /* SettingsView.swift */; };
+		3D3F182326B760E9002DC266 /* StartBeeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F182226B760E9002DC266 /* StartBeeRouterTests.swift */; };
 		3D40FD2225A43E6100962DE0 /* ManageTagPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40FD2125A43E6100962DE0 /* ManageTagPresenter.swift */; };
 		3D4197962590D1CA00EB8253 /* CreateStickyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197952590D1CA00EB8253 /* CreateStickyRouter.swift */; };
 		3D4197A22590DC8C00EB8253 /* StartBeeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197A12590DC8C00EB8253 /* StartBeeModels.swift */; };
@@ -33,13 +30,9 @@
 		3D52D1CB25DFBB2800265A10 /* ManageStickyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52D1CA25DFBB2800265A10 /* ManageStickyPresenter.swift */; };
 		3D52D1CF25DFBBE900265A10 /* ManageStickyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52D1CE25DFBBE900265A10 /* ManageStickyRouter.swift */; };
 		3D52D1D425DFBD7600265A10 /* ManageStickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52D1D325DFBD7600265A10 /* ManageStickyView.swift */; };
-		3D52DF7D25A5609C0043A5F1 /* ManageTagViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52DF7C25A5609C0043A5F1 /* ManageTagViewControllerTests.swift */; };
-		3D52DF7F25A5670B0043A5F1 /* ManageTagInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52DF7E25A5670B0043A5F1 /* ManageTagInteractorTests.swift */; };
 		3D67AC6F25EB79E90065BB79 /* BeeAudioRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67AC6E25EB79E90065BB79 /* BeeAudioRecorderView.swift */; };
 		3D67AC7325EB9EA30065BB79 /* BeeAudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67AC7225EB9EA30065BB79 /* BeeAudioPlayerView.swift */; };
 		3D6B413225ECDCAE0093438F /* BeeAudioVisualizerComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B413125ECDCAE0093438F /* BeeAudioVisualizerComposition.swift */; };
-		3D6CA6C0259715AD00B49A6A /* StickySqliteHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CA6BF259715AD00B49A6A /* StickySqliteHelperTests.swift */; };
-		3D74FD4925DFB4FC00631163 /* ListStickiesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD4825DFB4FC00631163 /* ListStickiesViewControllerTests.swift */; };
 		3D74FD5025DFB56700631163 /* ManageStickyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD4F25DFB56700631163 /* ManageStickyViewController.swift */; };
 		3D74FD5625DFB5BD00631163 /* ManageStickyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD5525DFB5BD00631163 /* ManageStickyModels.swift */; };
 		3D74FD6025DFB97F00631163 /* ManageStickyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74FD5F25DFB97E00631163 /* ManageStickyInteractor.swift */; };
@@ -67,18 +60,14 @@
 		3D84E43925B9568000B18D20 /* ChooseTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84E43825B9568000B18D20 /* ChooseTagView.swift */; };
 		3D85B44B25C945DA008E0FF9 /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85B44A25C945DA008E0FF9 /* AudioVisualizerView.swift */; };
 		3D8973582596391E0055831C /* BeeSqliteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8973572596391E0055831C /* BeeSqliteHelper.swift */; };
+		3D95E36F26B1F4300049BF68 /* StartBeeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95E36E26B1F4300049BF68 /* StartBeeInteractorTests.swift */; };
+		3D95E37126B20F5A0049BF68 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95E37026B20F5A0049BF68 /* Seeds.swift */; };
 		3D9BD0A1258AC006007F4E90 /* CreateStickyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BD0A0258AC006007F4E90 /* CreateStickyViewController.swift */; };
+		3DAAD15126B94E8800960834 /* StartBeeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAD15026B94E8800960834 /* StartBeeViewControllerTests.swift */; };
 		3DB9CDD025F2753E00085CF3 /* BeeZoomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9CDCF25F2753E00085CF3 /* BeeZoomImageView.swift */; };
 		3DBE5CC325D170420069FDBA /* ListStickiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE5CC225D170420069FDBA /* ListStickiesView.swift */; };
-		3DC913CB2591504A008C16F8 /* StartSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC913CA2591504A008C16F8 /* StartSceneViewControllerTests.swift */; };
 		3DC98E2426032513006DB06C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC98E2326032513006DB06C /* SettingsViewController.swift */; };
-		3DCE240F25A99C6600ECD395 /* ManageTagPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE240E25A99C6600ECD395 /* ManageTagPresenterTests.swift */; };
 		3DCE241125A9F5C900ECD395 /* ManageTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE241025A9F5C900ECD395 /* ManageTagView.swift */; };
-		3DD85D02258CB91000C15F37 /* CreateStickyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D01258CB91000C15F37 /* CreateStickyInteractorTests.swift */; };
-		3DD85D04258CDF9A00C15F37 /* CreateStickyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D03258CDF9A00C15F37 /* CreateStickyPresenterTests.swift */; };
-		3DD85D06258CE3F800C15F37 /* CreateStickyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D05258CE3F800C15F37 /* CreateStickyViewControllerTests.swift */; };
-		3DDAB0F5258F1638005FE193 /* StartSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAB0F4258F1638005FE193 /* StartSceneInteractorTests.swift */; };
-		3DDAB0F7258F1648005FE193 /* StartScenePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAB0F6258F1648005FE193 /* StartScenePresenterTests.swift */; };
 		3DDB487F2609CE2E00C95DB0 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB487E2609CE2E00C95DB0 /* Preferences.swift */; };
 		3DEB8E82259DA06200A87D9C /* ManageTagModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEB8E81259DA06200A87D9C /* ManageTagModels.swift */; };
 		3DF20CAE25BFA0CB00E35AC3 /* BeeCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF20CAD25BFA0CB00E35AC3 /* BeeCameraController.swift */; };
@@ -102,17 +91,14 @@
 		3D03C1D525F35CA400266BC6 /* ManagedSticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedSticky.swift; sourceTree = "<group>"; };
 		3D0F37B825B9B0F800EA14DF /* CreateStickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyView.swift; sourceTree = "<group>"; };
 		3D18180125CE962A00B4C3CB /* StickyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCell.swift; sourceTree = "<group>"; };
-		3D1B851625C57C54004D887D /* CreasteStickyViewDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreasteStickyViewDelegateTests.swift; sourceTree = "<group>"; };
-		3D1B851A25C58E98004D887D /* ManageTagViewDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagViewDelegateTests.swift; sourceTree = "<group>"; };
 		3D1C0EB326073DB9007A785E /* AppreanceSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppreanceSettingViewController.swift; sourceTree = "<group>"; };
-		3D201357258C64980077AF47 /* BeeWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeWorkerTests.swift; sourceTree = "<group>"; };
-		3D201359258C66170077AF47 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
 		3D2A05DE25F9185900A79FFB /* BeeEditTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeEditTagView.swift; sourceTree = "<group>"; };
 		3D2A05E225F918AF00A79FFB /* BeeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTextView.swift; sourceTree = "<group>"; };
 		3D2CF68425BC3C9800F7C2F4 /* BeeAudioRecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioRecordingController.swift; sourceTree = "<group>"; };
 		3D353C0D25CBDCFC000FE582 /* BeeMediaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeMediaHelper.swift; sourceTree = "<group>"; };
 		3D38BA9D25B97B34004F3E6D /* HexagonTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonTagView.swift; sourceTree = "<group>"; };
 		3D3D766A25FFA1C5008F5AD9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3D3F182226B760E9002DC266 /* StartBeeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeRouterTests.swift; sourceTree = "<group>"; };
 		3D40FD2125A43E6100962DE0 /* ManageTagPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagPresenter.swift; sourceTree = "<group>"; };
 		3D4197952590D1CA00EB8253 /* CreateStickyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyRouter.swift; sourceTree = "<group>"; };
 		3D4197A12590DC8C00EB8253 /* StartBeeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeModels.swift; sourceTree = "<group>"; };
@@ -125,13 +111,9 @@
 		3D52D1CA25DFBB2800265A10 /* ManageStickyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyPresenter.swift; sourceTree = "<group>"; };
 		3D52D1CE25DFBBE900265A10 /* ManageStickyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyRouter.swift; sourceTree = "<group>"; };
 		3D52D1D325DFBD7600265A10 /* ManageStickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyView.swift; sourceTree = "<group>"; };
-		3D52DF7C25A5609C0043A5F1 /* ManageTagViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagViewControllerTests.swift; sourceTree = "<group>"; };
-		3D52DF7E25A5670B0043A5F1 /* ManageTagInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagInteractorTests.swift; sourceTree = "<group>"; };
 		3D67AC6E25EB79E90065BB79 /* BeeAudioRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioRecorderView.swift; sourceTree = "<group>"; };
 		3D67AC7225EB9EA30065BB79 /* BeeAudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioPlayerView.swift; sourceTree = "<group>"; };
 		3D6B413125ECDCAE0093438F /* BeeAudioVisualizerComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioVisualizerComposition.swift; sourceTree = "<group>"; };
-		3D6CA6BF259715AD00B49A6A /* StickySqliteHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickySqliteHelperTests.swift; sourceTree = "<group>"; };
-		3D74FD4825DFB4FC00631163 /* ListStickiesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesViewControllerTests.swift; sourceTree = "<group>"; };
 		3D74FD4F25DFB56700631163 /* ManageStickyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyViewController.swift; sourceTree = "<group>"; };
 		3D74FD5525DFB5BD00631163 /* ManageStickyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyModels.swift; sourceTree = "<group>"; };
 		3D74FD5F25DFB97E00631163 /* ManageStickyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStickyInteractor.swift; sourceTree = "<group>"; };
@@ -163,18 +145,14 @@
 		3D84E43825B9568000B18D20 /* ChooseTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTagView.swift; sourceTree = "<group>"; };
 		3D85B44A25C945DA008E0FF9 /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
 		3D8973572596391E0055831C /* BeeSqliteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeSqliteHelper.swift; sourceTree = "<group>"; };
+		3D95E36E26B1F4300049BF68 /* StartBeeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeInteractorTests.swift; sourceTree = "<group>"; };
+		3D95E37026B20F5A0049BF68 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
 		3D9BD0A0258AC006007F4E90 /* CreateStickyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyViewController.swift; sourceTree = "<group>"; };
+		3DAAD15026B94E8800960834 /* StartBeeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeViewControllerTests.swift; sourceTree = "<group>"; };
 		3DB9CDCF25F2753E00085CF3 /* BeeZoomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeZoomImageView.swift; sourceTree = "<group>"; };
 		3DBE5CC225D170420069FDBA /* ListStickiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStickiesView.swift; sourceTree = "<group>"; };
-		3DC913CA2591504A008C16F8 /* StartSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneViewControllerTests.swift; sourceTree = "<group>"; };
 		3DC98E2326032513006DB06C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		3DCE240E25A99C6600ECD395 /* ManageTagPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagPresenterTests.swift; sourceTree = "<group>"; };
 		3DCE241025A9F5C900ECD395 /* ManageTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagView.swift; sourceTree = "<group>"; };
-		3DD85D01258CB91000C15F37 /* CreateStickyInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyInteractorTests.swift; sourceTree = "<group>"; };
-		3DD85D03258CDF9A00C15F37 /* CreateStickyPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyPresenterTests.swift; sourceTree = "<group>"; };
-		3DD85D05258CE3F800C15F37 /* CreateStickyViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyViewControllerTests.swift; sourceTree = "<group>"; };
-		3DDAB0F4258F1638005FE193 /* StartSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneInteractorTests.swift; sourceTree = "<group>"; };
-		3DDAB0F6258F1648005FE193 /* StartScenePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScenePresenterTests.swift; sourceTree = "<group>"; };
 		3DDB487E2609CE2E00C95DB0 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		3DEB8E81259DA06200A87D9C /* ManageTagModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagModels.swift; sourceTree = "<group>"; };
 		3DF20CAD25BFA0CB00E35AC3 /* BeeCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeCameraController.swift; sourceTree = "<group>"; };
@@ -208,22 +186,6 @@
 				3D0F37B825B9B0F800EA14DF /* CreateStickyView.swift */,
 			);
 			path = CreateStickySceneUI;
-			sourceTree = "<group>";
-		};
-		3D1AB85A25962F9800BF93B1 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				3D6CA6BF259715AD00B49A6A /* StickySqliteHelperTests.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		3D201356258C647D0077AF47 /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-				3D201357258C64980077AF47 /* BeeWorkerTests.swift */,
-			);
-			path = Workers;
 			sourceTree = "<group>";
 		};
 		3D2E49D625CBC3710040A87D /* Utility */ = {
@@ -266,6 +228,16 @@
 			path = SettingsSceneUI;
 			sourceTree = "<group>";
 		};
+		3D3F182126B760BB002DC266 /* StartBee */ = {
+			isa = PBXGroup;
+			children = (
+				3D95E36E26B1F4300049BF68 /* StartBeeInteractorTests.swift */,
+				3D3F182226B760E9002DC266 /* StartBeeRouterTests.swift */,
+				3DAAD15026B94E8800960834 /* StartBeeViewControllerTests.swift */,
+			);
+			path = StartBee;
+			sourceTree = "<group>";
+		};
 		3D4197A02590DC7300EB8253 /* StartBee */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,14 +278,6 @@
 				3D67AC7225EB9EA30065BB79 /* BeeAudioPlayerView.swift */,
 			);
 			path = BeeMediaView;
-			sourceTree = "<group>";
-		};
-		3D74FD4725DFB48200631163 /* ListStickiesTest */ = {
-			isa = PBXGroup;
-			children = (
-				3D74FD4825DFB4FC00631163 /* ListStickiesViewControllerTests.swift */,
-			);
-			path = ListStickiesTest;
 			sourceTree = "<group>";
 		};
 		3D74FD4E25DFB51E00631163 /* ManageSticky */ = {
@@ -375,12 +339,10 @@
 		3D77DA61258782DC00957A0E /* bStickyTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D78C4DD2588EF02006383FC /* Scenes */,
-				3D1AB85A25962F9800BF93B1 /* Service */,
-				3D201356258C647D0077AF47 /* Workers */,
+				3D95E36D26B1F3BF0049BF68 /* Scenes */,
 				3D77DA62258782DC00957A0E /* bStickyTests.swift */,
-				3D201359258C66170077AF47 /* Seeds.swift */,
 				3D77DA64258782DC00957A0E /* Info.plist */,
+				3D95E37026B20F5A0049BF68 /* Seeds.swift */,
 			);
 			path = bStickyTests;
 			sourceTree = "<group>";
@@ -449,17 +411,6 @@
 			path = ListStickies;
 			sourceTree = "<group>";
 		};
-		3D78C4DD2588EF02006383FC /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				3DDAB0F3258F15E1005FE193 /* StartSceneTest */,
-				3DD85D00258CB8D100C15F37 /* CreateStickyTest */,
-				3DCF7293259C900000DD592A /* ManageTagTest */,
-				3D74FD4725DFB48200631163 /* ListStickiesTest */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
 		3D7C3880259B677C00B3FA95 /* ManageTag */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +436,14 @@
 			path = ManageTagSceneUI;
 			sourceTree = "<group>";
 		};
+		3D95E36D26B1F3BF0049BF68 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F182126B760BB002DC266 /* StartBee */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		3DA0F86E2594978500D713D9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,38 +456,6 @@
 				3D67AC6D25EB79C70065BB79 /* BeeMediaView */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		3DCF7293259C900000DD592A /* ManageTagTest */ = {
-			isa = PBXGroup;
-			children = (
-				3D52DF7C25A5609C0043A5F1 /* ManageTagViewControllerTests.swift */,
-				3D52DF7E25A5670B0043A5F1 /* ManageTagInteractorTests.swift */,
-				3DCE240E25A99C6600ECD395 /* ManageTagPresenterTests.swift */,
-				3D1B851A25C58E98004D887D /* ManageTagViewDelegateTests.swift */,
-			);
-			path = ManageTagTest;
-			sourceTree = "<group>";
-		};
-		3DD85D00258CB8D100C15F37 /* CreateStickyTest */ = {
-			isa = PBXGroup;
-			children = (
-				3DD85D05258CE3F800C15F37 /* CreateStickyViewControllerTests.swift */,
-				3DD85D01258CB91000C15F37 /* CreateStickyInteractorTests.swift */,
-				3DD85D03258CDF9A00C15F37 /* CreateStickyPresenterTests.swift */,
-				3D1B851625C57C54004D887D /* CreasteStickyViewDelegateTests.swift */,
-			);
-			path = CreateStickyTest;
-			sourceTree = "<group>";
-		};
-		3DDAB0F3258F15E1005FE193 /* StartSceneTest */ = {
-			isa = PBXGroup;
-			children = (
-				3DDAB0F4258F1638005FE193 /* StartSceneInteractorTests.swift */,
-				3DDAB0F6258F1648005FE193 /* StartScenePresenterTests.swift */,
-				3DC913CA2591504A008C16F8 /* StartSceneViewControllerTests.swift */,
-			);
-			path = StartSceneTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -699,22 +626,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDAB0F7258F1648005FE193 /* StartScenePresenterTests.swift in Sources */,
-				3D52DF7D25A5609C0043A5F1 /* ManageTagViewControllerTests.swift in Sources */,
-				3D1B851B25C58E98004D887D /* ManageTagViewDelegateTests.swift in Sources */,
+				3DAAD15126B94E8800960834 /* StartBeeViewControllerTests.swift in Sources */,
+				3D95E36F26B1F4300049BF68 /* StartBeeInteractorTests.swift in Sources */,
 				3D77DA63258782DC00957A0E /* bStickyTests.swift in Sources */,
-				3D6CA6C0259715AD00B49A6A /* StickySqliteHelperTests.swift in Sources */,
-				3DCE240F25A99C6600ECD395 /* ManageTagPresenterTests.swift in Sources */,
-				3D52DF7F25A5670B0043A5F1 /* ManageTagInteractorTests.swift in Sources */,
-				3DD85D06258CE3F800C15F37 /* CreateStickyViewControllerTests.swift in Sources */,
-				3D201358258C64980077AF47 /* BeeWorkerTests.swift in Sources */,
-				3D20135A258C66170077AF47 /* Seeds.swift in Sources */,
-				3DC913CB2591504A008C16F8 /* StartSceneViewControllerTests.swift in Sources */,
-				3D1B851725C57C54004D887D /* CreasteStickyViewDelegateTests.swift in Sources */,
-				3DD85D02258CB91000C15F37 /* CreateStickyInteractorTests.swift in Sources */,
-				3D74FD4925DFB4FC00631163 /* ListStickiesViewControllerTests.swift in Sources */,
-				3DDAB0F5258F1638005FE193 /* StartSceneInteractorTests.swift in Sources */,
-				3DD85D04258CDF9A00C15F37 /* CreateStickyPresenterTests.swift in Sources */,
+				3D3F182326B760E9002DC266 /* StartBeeRouterTests.swift in Sources */,
+				3D95E37126B20F5A0049BF68 /* Seeds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ protocol StartBeeDataStore {
     var chosenTagButtonPosition: Int? { get }
 }
 
-class StartSceneInteractor: StartBeeBusinessLogic, StartBeeDataStore {
+class StartBeeInteractor: StartBeeBusinessLogic, StartBeeDataStore {
 
     var beeWorker = BeeWorker(BeeDB: BeeDatabase())
     //var stickyWorker = BeeWorker(BeeDB: BeeMemDB())
@@ -38,10 +38,10 @@ class StartSceneInteractor: StartBeeBusinessLogic, StartBeeDataStore {
     // MARK: - Fetch tags
     
     func fetchTags(request: StartBee.FetchTags.Request) {
-        beeWorker.fetchTags { (tags) -> Void in
-            // First tag is alway default tag created by system
-            let tagsWithoutDefaultTag = tags.dropFirst()
-            self.fetchedTags = Array(tagsWithoutDefaultTag)
+        beeWorker.fetchTags {(tags) -> Void in
+            // tag[0] = default tag
+            self.fetchedTags = Array(tags.dropFirst())
+            
             let response = StartBee.FetchTags.Response(tags: tags)
             self.presenter?.presentFetchedTags(response: response)
         }
