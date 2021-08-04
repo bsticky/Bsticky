@@ -9,6 +9,19 @@
 @testable import bSticky
 import XCTest
 
+struct TestDisplayTagButtonTappedFailure {
+    static var presentViewControllerAnimatedCompletionCalled = false
+    static var viewControllerToPresent: UIViewController?
+}
+
+extension StartBeeViewController {
+    override open func showDetailViewController(_ vc: UIViewController, sender: Any?) {
+        TestDisplayTagButtonTappedFailure.presentViewControllerAnimatedCompletionCalled = true
+        TestDisplayTagButtonTappedFailure.viewControllerToPresent = vc
+    }
+}
+
+
 class StartBeeViewControllerTests: XCTestCase {
     
     // MARK: Subject under test
@@ -155,4 +168,46 @@ class StartBeeViewControllerTests: XCTestCase {
         XCTAssert(startBeeRouterSpy.routeToManageTagCalled)
     }
     
+    func testTagButtonTappedShouldStartCreateSticky() {
+        // Given
+        let startBeeBusinessLogicSpy = StartBeeBusinessLogicSpy()
+        sut.interactor = startBeeBusinessLogicSpy
+        loadView()
+        
+        // When
+        sut.tagButtonTapped(tagId: 1, tagColor: UIColor.blue)
+        
+        // Then
+        XCTAssert(startBeeBusinessLogicSpy.startCreateStickyCalled)
+    }
+    
+    func testTagButtonWithoutTagTappedShouldShowAlert() {
+        // Given
+        let startBeeBusinessLogicSpy = StartBeeBusinessLogicSpy()
+        sut.interactor = startBeeBusinessLogicSpy
+        loadView()
+        
+        // When
+        sut.tagButtonTapped(tagId: 0, tagColor: UIColor.red)
+        
+        // Then
+        let alertController = TestDisplayTagButtonTappedFailure.viewControllerToPresent as! UIAlertController
+        
+        XCTAssert(TestDisplayTagButtonTappedFailure.presentViewControllerAnimatedCompletionCalled)
+        XCTAssertEqual(alertController.title, NSLocalizedString("Error", comment: ""))
+        XCTAssertEqual(alertController.message, NSLocalizedString("StartBeeVC.button.setTag", comment: ""))
+    }
+    
+    func testDisplayCreateStickyShouldRouteToCreateSticky() {
+        // Given
+        let startBeeRouterSpy = StartBeeRouterSpy()
+        sut.router = startBeeRouterSpy
+        loadView()
+        
+        // When
+        sut.displayCreateSticky(viewModel: StartBee.StartCreateSticky.ViewModel())
+        
+        // Then
+        XCTAssert(startBeeRouterSpy.routeToCreateStickyCalled)
+    }
 }

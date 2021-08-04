@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  bSticky
+
+  Created by mima on 2021/08/04.
+  Copyright © 2021 FiftyPercent. All rights reserved.
+*/
+
+"Error" = "🚧";
+"StartBeeVC.button.setTag" = "Please, long press this button to set the tag for this button.";

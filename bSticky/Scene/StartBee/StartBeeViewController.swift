@@ -122,7 +122,10 @@ class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTag
 
     func tagButtonTapped(tagId: Int, tagColor: UIColor) {
         if tagId == 0 {
-            displayAlert(title: "First Set tag", message: "Please, long press this button to set the tag for this button.")
+            // Case: User tapped on tag button before set the tag.
+            let alertTitle = NSLocalizedString("Error", comment: "")
+            let alertMsg = NSLocalizedString("StartBeeVC.button.setTag", comment: "")
+            displayAlert(title: alertTitle, message: alertMsg)
         } else {
             let request = StartBee.StartCreateSticky.Request(tagId: tagId, tagColor: tagColor.toHex!)
             interactor?.startCreateSticky(request: request)
