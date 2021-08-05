@@ -205,9 +205,38 @@ class StartBeeViewControllerTests: XCTestCase {
         loadView()
         
         // When
-        sut.displayCreateSticky(viewModel: StartBee.StartCreateSticky.ViewModel())
+        let viewModel = StartBee.StartCreateSticky.ViewModel()
+        sut.displayCreateSticky(viewModel: viewModel)
         
         // Then
         XCTAssert(startBeeRouterSpy.routeToCreateStickyCalled)
+    }
+    
+    func testHiveButtonTappedShouldStartListStickies() {
+        // Given
+        let startBeeBusinessLogicSpy = StartBeeBusinessLogicSpy()
+        sut.interactor = startBeeBusinessLogicSpy
+        loadView()
+        
+        // When
+        sut.hiveButtonTapped()
+        
+        // Then
+        XCTAssert(startBeeBusinessLogicSpy.startListStickiesCalled)
+    }
+    
+    func testDisplayListStickiesShouldRouteToListStickies() {
+        // Given
+        let startBeeRouterSpy = StartBeeRouterSpy()
+        sut.router = startBeeRouterSpy
+        loadView()
+        
+        // When
+        let viewModel = StartBee.StartListStickies.ViewModel()
+        sut.displayListStickies(viewModel: viewModel)
+        
+        // Then
+        XCTAssert(startBeeRouterSpy.routeToListStickiesCalled)
+        
     }
 }

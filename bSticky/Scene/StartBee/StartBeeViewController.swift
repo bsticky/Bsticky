@@ -140,9 +140,7 @@ class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTag
     
     func hiveButtonTapped() {
         // List all stickies without specific tag
-        let request = StartBee.StartListStickies.Request(tagId: 0,
-                                                         tagName: "",
-                                                         tagColor: "#B22939")
+        let request = StartBee.StartListStickies.Request()
         interactor?.startListStickies(request: request)
     }
     

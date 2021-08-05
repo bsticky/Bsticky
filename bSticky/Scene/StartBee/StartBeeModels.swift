@@ -48,9 +48,9 @@ enum StartBee {
     
     enum StartListStickies {
         struct Request {
-            var tagId: Int
-            var tagName: String
-            var tagColor: String
+            var tagId: Int?
+            var tagName: String?
+            var tagColor: String?
         }
         struct Response {
         }
