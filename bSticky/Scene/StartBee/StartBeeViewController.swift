@@ -17,7 +17,6 @@ protocol StartBeeDisplayLogic: class {
 }
 
 class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTagViewDelegate {
-
     var interactor: StartBeeBusinessLogic?
     var router: (NSObjectProtocol & StartBeeRoutingLogic & StartBeeDataPassing)?
     
@@ -47,8 +46,6 @@ class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTag
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.isNavigationBarHidden = true
         setupConstraints()
         self.tagContainerView?.layoutTrait(traitCollection: UIScreen.main.traitCollection)
     }
@@ -77,11 +74,11 @@ class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTag
    
     private func setupUI() {
         let tagContainerView = HexagonTagView()
-        view.addSubview(tagContainerView)
         self.tagContainerView = tagContainerView
         self.tagContainerView.delegate = self
         
-        setWallpaper()
+        view.addSubview(tagContainerView)
+        navigationController?.isNavigationBarHidden = true
     }
     
     private func setupConstraints() {
@@ -166,29 +163,23 @@ class StartBeeViewController: UIViewController, StartBeeDisplayLogic, HexagonTag
     // MARK: - Helper
     
     private func setWallpaper() {
-        let wallpaper = Preferences.shared.wallpaper
-        if wallpaper != nil {
-            if wallpaper == "wallpaper.jpg" {
-                let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-                let url = urls[urls.endIndex-1].appendingPathComponent("wallpaper.jpg")
-                
-                if FileManager.default.fileExists(atPath: url.path) {
-                    UIGraphicsBeginImageContext(self.view.frame.size)
-                    UIImage(contentsOfFile: url.path)?.draw(in: self.view.bounds)
-                    let bg: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-                    UIGraphicsEndImageContext()
-                    self.tagContainerView.backgroundColor = UIColor(patternImage: bg)
-                }
-            } else {
-                self.tagContainerView.backgroundColor = UIColor(wallpaper!)
+        guard let wallpaper = Preferences.shared.wallpaper else {
+            return
+        }
+        
+        if wallpaper.hasSuffix(".jpg") {
+            guard let bg = BeeMediaHelper.getWallpaper(size: self.view.frame.size, bounds: self.view.bounds) else {
+                return
             }
+            self.tagContainerView.backgroundColor = UIColor(patternImage: bg)
+        } else {
+            self.tagContainerView.backgroundColor = UIColor(wallpaper)
         }
     }
     
     private func displayAlert(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
-        // route to start bee
         let okAction = UIAlertAction(title: "OK",
                                      style: .default,
                                      handler: nil)

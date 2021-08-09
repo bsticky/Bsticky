@@ -237,6 +237,5 @@ class StartBeeViewControllerTests: XCTestCase {
         
         // Then
         XCTAssert(startBeeRouterSpy.routeToListStickiesCalled)
-        
     }
 }

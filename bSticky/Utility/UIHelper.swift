@@ -12,7 +12,7 @@ import UIKit
 
 // MARK: - UIColor hex converter
 extension UIColor {
-    // From: https://stackoverflow.com/questions/24263007/how-to-use-hex-color-value
+    // src: https://stackoverflow.com/questions/24263007/how-to-use-hex-color-value
     convenience init(_ hex: String, alpha: CGFloat = 1.0) {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
@@ -33,16 +33,17 @@ extension UIColor {
         /* Usage
          UIColor("#ff0000") // with #
          UIColor("ff0000")  // without #
-         UIColor("ff0000", alpha: 0.5) // using optional alpha valu
+         UIColor("ff0000", alpha: 0.5) // using optional alpha value
          */
     }
     
-    // From: https://cocoacasts.com/from-hex-to-uicolor-and-back-in-swif
+    
     var toHex: String? {
         return toHex()
     }
     
     func toHex(alpha: Bool = false) -> String? {
+        // src: https://cocoacasts.com/from-hex-to-uicolor-and-back-in-swif
         guard let components = cgColor.components, components.count >= 3 else {
             return nil
         }
@@ -66,9 +67,9 @@ extension UIColor {
 }
 
 // MARK: - Image view round corner
-// From: https://medium.com/@ahmedmuslimani609/rounded-corner-images-and-why-it-kills-your-app-248750884379
 
 extension UIImage{
+    // src: https://medium.com/@ahmedmuslimani609/rounded-corner-images-and-why-it-kills-your-app-248750884379
     var roundedImage: UIImage {
         let rect = CGRect(origin:CGPoint(x: 0, y: 0), size: self.size)
         UIGraphicsBeginImageContextWithOptions(self.size, false, 1)
@@ -84,7 +85,6 @@ extension UIImage{
 // MARK: - Date formatter
 
 struct BeeDateFormatter {
-    
     static func convertDate(since1970: Int, withHouraAndMinutes: Bool = false) -> String {
         let time = Date(timeIntervalSince1970: TimeInterval(since1970))
         
@@ -105,7 +105,6 @@ struct BeeDateFormatter {
 // MARK: - Orientaion lock
 
 struct AppUtility {
-
     static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
     
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
@@ -120,21 +119,19 @@ struct AppUtility {
     
         UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
         UINavigationController.attemptRotationToDeviceOrientation()
-    }
+        /*
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            // only portrait
+            AppUtility.lockOrientation(.portrait)
+        }
+
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            // release rotation lock
+            AppUtility.lockOrientation(.allButUpsideDown)
+        }
+        */   }
 }
 
-/*
-// MARK: lock orientation example
 
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    // only portrait
-    AppUtility.lockOrientation(.portrait)
-}
-
-override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-    // release rotation lock
-    AppUtility.lockOrientation(.allButUpsideDown)
-}
-*/

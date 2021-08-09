@@ -101,25 +101,20 @@ class AppreanceSettingViewController: UIViewController {
     // MARK: - Helpers
     
     private func setWallpaper() {
-        let wallpaper = Preferences.shared.wallpaper
-        if wallpaper != nil {
-            if wallpaper == "wallpaper.jpg" {
-                let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-                let url = urls[urls.endIndex-1].appendingPathComponent("wallpaper.jpg")
-                
-                if FileManager.default.fileExists(atPath: url.path) {
-                    // wallpaper preview size is main frame / 4
-                    let frameSize = CGSize(width: self.view.frame.size.width * CGFloat(0.4),
-                                           height: self.view.frame.size.height * CGFloat(0.4))
-                    UIGraphicsBeginImageContext(frameSize)
-                    UIImage(contentsOfFile: url.path)?.draw(in: self.wallpaperSettingView.wallpaperPreview.bounds)
-                    let bg: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-                    UIGraphicsEndImageContext()
-                    self.wallpaperSettingView.wallpaperPreview.backgroundColor = UIColor(patternImage: bg)
-                }
-            } else {
-                self.wallpaperSettingView.wallpaperPreview.backgroundColor = UIColor(wallpaper!)
+        guard let wallpaper = Preferences.shared.wallpaper else {
+            return
+        }
+        
+        if wallpaper.hasSuffix(".jpg") {
+            let size = wallpaperSettingView.wallpaperPreview.frame.size
+            let bounds = self.wallpaperSettingView.wallpaperPreview.bounds
+            
+            guard let bg = BeeMediaHelper.getWallpaper(size: size, bounds: bounds) else {
+                return
             }
+            self.wallpaperSettingView.wallpaperPreview.backgroundColor = UIColor(patternImage: bg)
+        } else {
+            self.wallpaperSettingView.wallpaperPreview.backgroundColor = UIColor(wallpaper)
         }
     }
     

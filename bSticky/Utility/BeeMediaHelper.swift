@@ -10,9 +10,7 @@ import UIKit
 import QuickLookThumbnailing
 
 class BeeMediaHelper {
-    
     // MARK: Generate file url (for image, audio file)
-    
     static func generateNewFileURL(mediaType: MediaType) throws -> URL {
         var url: URL?
         
@@ -71,9 +69,7 @@ class BeeMediaHelper {
     }
     
     // MARK: Get exists audio URL
-    
     static func getAudioURL(fileName: String) -> URL! {
-        
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let directoryPath = urls[urls.endIndex-1].appendingPathComponent("audio")
         let audioURL = directoryPath.appendingPathComponent(fileName)
@@ -101,10 +97,6 @@ class BeeMediaHelper {
             break
         }
         
-        if url == nil {
-            return nil
-        }
-        
         if FileManager.default.fileExists(atPath: url!.path) {
             let url = URL(fileURLWithPath: url!.path)
             return url
@@ -126,7 +118,6 @@ class BeeMediaHelper {
     }
     
     // MARK: Delete file
-    
     static func deleteFile(fileURL: URL) {
         do {
             try FileManager.default.removeItem(at: fileURL)
@@ -139,17 +130,10 @@ class BeeMediaHelper {
     }
     
     // MARK: Camera permission alert
-    
     static func getCameraPermissionAlert() -> UIAlertController {
         let alertController = UIAlertController(title: "", message: "Please allow access to the camera in the device's settings -> Privacy -> Camera", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK",
-                                     style: .default,
-                                     handler: { (alert: UIAlertAction!) in
-                                        if UIApplication.shared.canOpenURL(
-                                            URL(string: UIApplication.openSettingsURLString)!) {
-                                            UIApplication.shared.openURL(
-                                                URL(string: UIApplication.openSettingsURLString)!)
-                                        } })
+        let okAction = UIAlertAction(
+            title: "OK", style: .default, handler: { (alert: UIAlertAction!) in if UIApplication.shared.canOpenURL( URL(string: UIApplication.openSettingsURLString)!) { UIApplication.shared.openURL( URL(string: UIApplication.openSettingsURLString)!) } })
 
         let cancelAction = UIAlertAction(title: "Cancel",
                                      style: .default,
@@ -158,6 +142,22 @@ class BeeMediaHelper {
         alertController.addAction(cancelAction)
         
         return alertController
+    }
+    
+    // MARK: Draw Wallpaper
+    static func getWallpaper(size: CGSize, bounds: CGRect) -> UIImage! {
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let url = urls[urls.endIndex-1].appendingPathComponent("wallpaper.jpg")
+        
+        if FileManager.default.fileExists(atPath: url.path) {
+            UIGraphicsBeginImageContext(size)
+            UIImage(contentsOfFile: url.path)?.draw(in: bounds)
+            let bg: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+            UIGraphicsEndImageContext()
+            return bg
+        } else {
+            return nil
+        }
     }
 
     // MARK: - Media type
