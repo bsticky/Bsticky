@@ -238,4 +238,42 @@ class StartBeeViewControllerTests: XCTestCase {
         // Then
         XCTAssert(startBeeRouterSpy.routeToListStickiesCalled)
     }
+    
+    func testTagButtonDropInHiveButtoniShouldStartListStickiesWithTagId() {
+        // Given
+        let startBeeBusinessLogicSpy = StartBeeBusinessLogicSpy()
+        sut.interactor = startBeeBusinessLogicSpy
+        loadView()
+        
+        // When
+        sut.tagButtonDropInHiveButton(tagId: 1, tagName: "TagOne", tagColor: UIColor.red)
+        
+        // Then
+        XCTAssert(startBeeBusinessLogicSpy.startListStickiesCalled)
+    }
+    
+    func testTagButtonDropInHiveButtonWithoutTagIdShouldReturn() {
+        // Given
+        let startBeeBusinessLogicSpy = StartBeeBusinessLogicSpy()
+        sut.interactor = startBeeBusinessLogicSpy
+        
+        // When
+        sut.tagButtonDropInHiveButton(tagId: 0, tagName: "", tagColor: UIColor.white)
+        
+        // Then
+        XCTAssertFalse(startBeeBusinessLogicSpy.startListStickiesCalled)
+    }
+    
+    func testHiveButtonLongTappedShouldRouteToSettings() {
+        // Given
+        let startBeeRouterSpy = StartBeeRouterSpy()
+        sut.router = startBeeRouterSpy
+        loadView()
+        
+        // When
+        sut.hiveButtonLongTapped()
+        
+        // Then
+        XCTAssert(startBeeRouterSpy.routeToSettingsCalled)
+    }
 }
