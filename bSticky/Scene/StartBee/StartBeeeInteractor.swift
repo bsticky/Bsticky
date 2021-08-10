@@ -39,9 +39,7 @@ class StartBeeInteractor: StartBeeBusinessLogic, StartBeeDataStore {
     
     func fetchTags(request: StartBee.FetchTags.Request) {
         beeWorker.fetchTags {(tags) -> Void in
-            // tag[0] = default tag
-            self.fetchedTags = Array(tags.dropFirst())
-            
+            self.fetchedTags = Array(tags.dropFirst()) // tag[0] = default tag
             let response = StartBee.FetchTags.Response(tags: tags)
             self.presenter?.presentFetchedTags(response: response)
         }

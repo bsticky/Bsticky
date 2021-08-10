@@ -11,8 +11,8 @@ import XCTest
 
 struct Seeds {
     struct Tags {
-        static let tagOne = Tag(id: 1, name: "tagOne", color: "#FFFFFF", position: 1, activated: true, createdDate: 1627512117, description: "tagOne|id: 0|position: 1")
-        static let tagTwo = Tag(id: 2, name: "tagTwo", color: "#000000", position: 2, activated: true, createdDate: 1627512654 , description: "tagTwo|id: 1|position:2")
+        static let tagOne = Tag(id: 1, name: "TagOne", color: "#FF1D00", position: 1, activated: true, createdDate: 1627512117, description: "tagOne|id: 0|position: 1")
+        static let tagTwo = Tag(id: 2, name: "TagTwo", color: "#43FF5D", position: 2, activated: true, createdDate: 1627512654 , description: "tagTwo|id: 1|position:2")
     }
     
     // For test StartBeeViewController: displayFetchedTags()

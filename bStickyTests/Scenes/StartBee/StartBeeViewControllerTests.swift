@@ -23,7 +23,6 @@ extension StartBeeViewController {
 
 
 class StartBeeViewControllerTests: XCTestCase {
-    
     // MARK: Subject under test
     
     var sut: StartBeeViewController!

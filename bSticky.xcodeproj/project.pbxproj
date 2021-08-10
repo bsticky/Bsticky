@@ -14,10 +14,10 @@
 		3D2A05DF25F9185900A79FFB /* BeeEditTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A05DE25F9185900A79FFB /* BeeEditTagView.swift */; };
 		3D2A05E325F918AF00A79FFB /* BeeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A05E225F918AF00A79FFB /* BeeTextView.swift */; };
 		3D2CF68525BC3C9800F7C2F4 /* BeeAudioRecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CF68425BC3C9800F7C2F4 /* BeeAudioRecordingController.swift */; };
+		3D301AEA26C2921100733A5A /* StartBeePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D301AE926C2921100733A5A /* StartBeePresenterTests.swift */; };
 		3D353C0E25CBDCFC000FE582 /* BeeMediaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D353C0D25CBDCFC000FE582 /* BeeMediaHelper.swift */; };
 		3D38BA9E25B97B34004F3E6D /* HexagonTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38BA9D25B97B34004F3E6D /* HexagonTagView.swift */; };
 		3D3D766B25FFA1C5008F5AD9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D766A25FFA1C5008F5AD9 /* SettingsView.swift */; };
-		3D3F182326B760E9002DC266 /* StartBeeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F182226B760E9002DC266 /* StartBeeRouterTests.swift */; };
 		3D40FD2225A43E6100962DE0 /* ManageTagPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40FD2125A43E6100962DE0 /* ManageTagPresenter.swift */; };
 		3D4197962590D1CA00EB8253 /* CreateStickyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197952590D1CA00EB8253 /* CreateStickyRouter.swift */; };
 		3D4197A22590DC8C00EB8253 /* StartBeeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4197A12590DC8C00EB8253 /* StartBeeModels.swift */; };
@@ -96,10 +96,10 @@
 		3D2A05DE25F9185900A79FFB /* BeeEditTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeEditTagView.swift; sourceTree = "<group>"; };
 		3D2A05E225F918AF00A79FFB /* BeeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTextView.swift; sourceTree = "<group>"; };
 		3D2CF68425BC3C9800F7C2F4 /* BeeAudioRecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAudioRecordingController.swift; sourceTree = "<group>"; };
+		3D301AE926C2921100733A5A /* StartBeePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeePresenterTests.swift; sourceTree = "<group>"; };
 		3D353C0D25CBDCFC000FE582 /* BeeMediaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeMediaHelper.swift; sourceTree = "<group>"; };
 		3D38BA9D25B97B34004F3E6D /* HexagonTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonTagView.swift; sourceTree = "<group>"; };
 		3D3D766A25FFA1C5008F5AD9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		3D3F182226B760E9002DC266 /* StartBeeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeRouterTests.swift; sourceTree = "<group>"; };
 		3D40FD2125A43E6100962DE0 /* ManageTagPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTagPresenter.swift; sourceTree = "<group>"; };
 		3D4197952590D1CA00EB8253 /* CreateStickyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStickyRouter.swift; sourceTree = "<group>"; };
 		3D4197A12590DC8C00EB8253 /* StartBeeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBeeModels.swift; sourceTree = "<group>"; };
@@ -234,8 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				3D95E36E26B1F4300049BF68 /* StartBeeInteractorTests.swift */,
-				3D3F182226B760E9002DC266 /* StartBeeRouterTests.swift */,
 				3DAAD15026B94E8800960834 /* StartBeeViewControllerTests.swift */,
+				3D301AE926C2921100733A5A /* StartBeePresenterTests.swift */,
 			);
 			path = StartBee;
 			sourceTree = "<group>";
@@ -633,8 +633,8 @@
 			files = (
 				3DAAD15126B94E8800960834 /* StartBeeViewControllerTests.swift in Sources */,
 				3D95E36F26B1F4300049BF68 /* StartBeeInteractorTests.swift in Sources */,
+				3D301AEA26C2921100733A5A /* StartBeePresenterTests.swift in Sources */,
 				3D77DA63258782DC00957A0E /* bStickyTests.swift in Sources */,
-				3D3F182326B760E9002DC266 /* StartBeeRouterTests.swift in Sources */,
 				3D95E37126B20F5A0049BF68 /* Seeds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
