@@ -24,18 +24,12 @@ class StartBeePresenter: StartBeePresentationLogic {
         var tag: Tag
         let tags = response.tags
         var viewModel = StartBee.FetchTags.ViewModel(displayedTags: [])
-
-         for i in 1...viewController!.numberOfTags {
-             // Find activated tag
-             if let tagIndex = tags.firstIndex(where: { $0.position == i && $0.activated == true}) {
-                 tag = tags[tagIndex]
-             }
-             else {
-                 // TODO: get color from user defaults
-                 tag = Tag(id: 0, name: "", color: "#F4116F", position: 0, activated: true, createdDate: 0, description: "")
-             }
+        
+        for i in 1...viewController!.numberOfTags {
+            if let tagIndex = tags.firstIndex(where: { $0.position == i && $0.activated == true}) { tag = tags[tagIndex] }
+             else { tag = tags[0] }
              
-             let displayedTag = StartBee.FetchTags.ViewModel.DisplayedTag(id: tag.id, name: tag.name, color: tag.color)
+            let displayedTag = StartBee.FetchTags.ViewModel.DisplayedTag(id: tag.id, name: tag.name, color: tag.color)
              
              viewModel.displayedTags.append(displayedTag)
          }

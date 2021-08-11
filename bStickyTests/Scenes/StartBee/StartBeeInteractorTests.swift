@@ -61,7 +61,7 @@ class StartBeeInteractorTest: XCTestCase {
         // Spied methods
         override func fetchTags(compeletionHandler: @escaping ([Tag]) -> Void) {
             fetchTagsCalled = true
-            compeletionHandler([Seeds.Tags.tagOne, Seeds.Tags.tagTwo])
+            compeletionHandler([Seeds.Tags.defaultTag, Seeds.Tags.tagOne, Seeds.Tags.tagTwo])
         }
     }
     
@@ -83,7 +83,22 @@ class StartBeeInteractorTest: XCTestCase {
         XCTAssert(startBeePresentationLogicSpy.presentFetchedTagsCalled, "FetchTags() should ask presenter to format tags result")
     }
     
-    func testStartManageTagShouldAskPresenterToFormatResult(){
+    func testFetchTagsShouldSetFetchedTagsOfDataStore() {
+        // Given
+        let beeWorkerSpy = BeeWorkerSpy(BeeDB: BeeMemDB())
+        sut.beeWorker = beeWorkerSpy
+        
+        // When
+        let request = StartBee.FetchTags.Request()
+        sut.fetchTags(request: request)
+        
+        // Then
+        XCTAssertNotNil(sut.fetchedTags)
+        XCTAssertEqual(sut.fetchedTags![0].id, 2)
+        XCTAssertEqual(sut.fetchedTags?[1].id, 3)
+    }
+    
+    func testStartManageTagShouldAskPresenterToFormatResultAndSetDataStore(){
         // Given
         let startBeePresentationLogicSpy = StartBeePresentationLogicSpy()
         sut.presenter = startBeePresentationLogicSpy
@@ -94,9 +109,11 @@ class StartBeeInteractorTest: XCTestCase {
         
         // Then
         XCTAssert(startBeePresentationLogicSpy.presentStartManageTagCalled, "startManageTag() should ask presenter to format tag result")
+        XCTAssertEqual(sut.chosenTagId, 1)
+        XCTAssertEqual(sut.chosenTagButtonPosition, 1)
     }
     
-    func testStartCreateStickyShouldAskPresenterToFormatResult() {
+    func testStartCreateStickyShouldAskPresenterToFormatResultAndSetDataStore() {
         // Given
         let startBeePresentationLogicSpy = StartBeePresentationLogicSpy()
         sut.presenter = startBeePresentationLogicSpy
@@ -107,9 +124,11 @@ class StartBeeInteractorTest: XCTestCase {
         
         // Then
         XCTAssert(startBeePresentationLogicSpy.presentStartCreateStickyCalled, "startCreateSticky() should ask presenter to presentStartCreateSticky")
+        XCTAssertEqual(sut.chosenTagId, 1)
+        XCTAssertEqual(sut.chosenTagColor, "#FFFFFF")
     }
     
-    func testStartListStickiesShouldAskPresenterToFormatResult() {
+    func testStartListStickiesShouldAskPresenterToFormatResultAndSetDataStore() {
         // Given
         let startBeePresentationLogicSpy = StartBeePresentationLogicSpy()
         sut.presenter = startBeePresentationLogicSpy
@@ -120,5 +139,8 @@ class StartBeeInteractorTest: XCTestCase {
         
         // Then
         XCTAssert(startBeePresentationLogicSpy.presentStartListStickiesCalled, "startListsStickies() should ask presenter to presentStartListStickies")
+        XCTAssertEqual(sut.chosenTagId, 1)
+        XCTAssertEqual(sut.chosenTagName, "TagOne")
+        XCTAssertEqual(sut.chosenTagColor, "#FFFFFF")
     }
 }

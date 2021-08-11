@@ -78,7 +78,7 @@ class StartBeePresenterTests: XCTestCase {
         sut.viewController = startBeeDisplayLogicSpy
         
         // When
-        let response = StartBee.FetchTags.Response(tags: [])
+        let response = StartBee.FetchTags.Response(tags: [Seeds.Tags.defaultTag])
         sut.presentFetchedTags(response: response)
         
         // Then
@@ -92,17 +92,20 @@ class StartBeePresenterTests: XCTestCase {
         sut.viewController = startBeeDisplayLogicSpy
         
         // When
-        let response = StartBee.FetchTags.Response(tags: [Seeds.Tags.tagOne, Seeds.Tags.tagTwo])
+        let response = StartBee.FetchTags.Response(tags: [Seeds.Tags.defaultTag, Seeds.Tags.tagOne, Seeds.Tags.tagTwo])
         sut.presentFetchedTags(response: response)
         
         // Then
         let displayedTags = startBeeDisplayLogicSpy.fetchedTagsViewModel.displayedTags
-        XCTAssertEqual(displayedTags[0].id, 1)
+        XCTAssertEqual(displayedTags[0].id, 2)
         XCTAssertEqual(displayedTags[0].name, "TagOne")
         XCTAssertEqual(displayedTags[0].color, "#FF1D00")
-        XCTAssertEqual(displayedTags[3].id, 0)
-        XCTAssertEqual(displayedTags[3].name, "")
-        XCTAssertEqual(displayedTags[3].color, "#F4116F")
+        XCTAssertEqual(displayedTags[1].id, 3)
+        XCTAssertEqual(displayedTags[1].name, "TagTwo")
+        XCTAssertEqual(displayedTags[1].color, "#43FF5D")
+        XCTAssertEqual(displayedTags[2].id, 1)
+        XCTAssertEqual(displayedTags[2].name, "Untitled")
+        XCTAssertEqual(displayedTags[2].color, "#707070")
     }
     
     func testPresentFetchedTagShouldAskViewControllerToDisplayFetchedTags() {
@@ -111,7 +114,7 @@ class StartBeePresenterTests: XCTestCase {
         sut.viewController = startBeeDisplayLogicSpy
         
         // When
-        let response = StartBee.FetchTags.Response(tags: [])
+        let response = StartBee.FetchTags.Response(tags: [Seeds.Tags.defaultTag])
         sut.presentFetchedTags(response: response)
         
         // Then
@@ -119,7 +122,41 @@ class StartBeePresenterTests: XCTestCase {
     }
     
     func testPresentManageTagShouldAskViewControllerToDisplayManageTag() {
+        // Given
+        let startBeeDisplayLogicSpy = StartBeeDisplayLogicSpy()
+        sut.viewController = startBeeDisplayLogicSpy
         
+        // When
+        let response = StartBee.StartManageTag.Response()
+        sut.presentStartManageTag(response: response)
+        
+        // Then
+        XCTAssert(startBeeDisplayLogicSpy.displayManageTagCalled)
     }
     
+    func testPresentStartCreateStickyShouldAskViewControllerToDisplayCreateSticky() {
+        // Given
+        let startBeeDisplayLogicSpy = StartBeeDisplayLogicSpy()
+        sut.viewController = startBeeDisplayLogicSpy
+        
+        // When
+        let response = StartBee.StartCreateSticky.Response()
+        sut.presentStartCreateSticky(response: response)
+        
+        // Then
+        XCTAssert(startBeeDisplayLogicSpy.displayCreateStickyCalled)
+    }
+    
+    func testPresentStartListStickiesShouldAskViewControllerToDisplayListStickies() {
+        // Given
+        let startBeeDisplayLogicSpy = StartBeeDisplayLogicSpy()
+        sut.viewController = startBeeDisplayLogicSpy
+        
+        // When
+        let response = StartBee.StartListStickies.Response()
+        sut.presentStartListStickies(response: response)
+        
+        // Then
+        XCTAssert(startBeeDisplayLogicSpy.displayListStickiesCalled)
+    }
 }
