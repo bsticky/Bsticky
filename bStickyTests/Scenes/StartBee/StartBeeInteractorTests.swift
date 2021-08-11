@@ -37,6 +37,7 @@ class StartBeeInteractorTest: XCTestCase {
         var presentStartManageTagCalled = false
         
         // Spied methods
+        
         func presentFetchedTags(response: StartBee.FetchTags.Response) {
             presentFetchedTagsCalled = true
         }
